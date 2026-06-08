@@ -97,15 +97,19 @@ export default function Home() {
         <section className="atlas-section atlas-intro">
           <div className="container atlas-two-column">
             <div>
-              <span className="atlas-kicker">The problem</span>
-              <h2>An anomaly is defined by its reference model.</h2>
+              <span className="atlas-kicker">Statistical detection</span>
+              <h2>Explain malicious activity as measurable deviation.</h2>
             </div>
-            <p>
-              Unusual does not automatically mean incorrect or harmful. Meaningful anomaly
-              detection starts by defining what is observed, what it is compared against, which
-              context matters, and whether the required telemetry can actually report the activity.
-              This project separates those foundational questions into two rigorous references.
-            </p>
+            <div>
+              <p>
+                The activity-to-anomaly catalog maps ATT&CK-aligned behavior to its comparison unit,
+                expected baseline, measurable deviation, applicable anomaly types, and supporting
+                telemetry. It also identifies activity better handled by signatures or policy rules.
+              </p>
+              <Link className="atlas-text-link" to="/attack-statistical-anomaly-mapping">
+                Open the activity-to-anomaly mapping catalog →
+              </Link>
+            </div>
           </div>
         </section>
 

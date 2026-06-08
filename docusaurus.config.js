@@ -77,6 +77,7 @@ const config = {
       items: [
         { to: '/attack-activity-log-source-catalog', label: 'ATT&CK Activities', position: 'left' },
         { to: '/attack-basic-detection-rule-catalog', label: 'Basic Rules', position: 'left' },
+        { to: '/attack-statistical-anomaly-mapping', label: 'Anomaly Mappings', position: 'left' },
         { to: '/statistical-anomaly-taxonomy', label: 'Anomaly Taxonomy', position: 'left' },
         { to: '/security-log-source-taxonomy', label: 'Log Sources', position: 'left' },
         {
@@ -99,6 +100,7 @@ const config = {
           items: [
             { label: 'ATT&CK Activities', to: '/attack-activity-log-source-catalog' },
             { label: 'Basic Detection Rules', to: '/attack-basic-detection-rule-catalog' },
+            { label: 'Activity-Anomaly Mappings', to: '/attack-statistical-anomaly-mapping' },
             { label: 'Statistical Anomalies', to: '/statistical-anomaly-taxonomy' },
             { label: 'Security Log Sources', to: '/security-log-source-taxonomy' },
           ],
