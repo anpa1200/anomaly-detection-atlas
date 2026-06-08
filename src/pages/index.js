@@ -73,6 +73,27 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="atlas-section">
+          <div className="container">
+            <div className="atlas-section-heading">
+              <span className="atlas-index">00.5</span>
+              <div>
+                <span className="atlas-kicker">Deterministic detection</span>
+                <h2>Basic Detection Rule Catalog</h2>
+              </div>
+              <strong>Thresholds · signatures · state changes</strong>
+            </div>
+            <p style={{ maxWidth: 760, color: 'var(--atlas-muted)', lineHeight: 1.8 }}>
+              Technique-level algorithmic detection logic using exact matches, fixed thresholds,
+              allowlists, state changes, and bounded-window correlations, with direct links to the
+              required telemetry sources.
+            </p>
+            <Link className="atlas-text-link" to="/attack-basic-detection-rule-catalog">
+              Open the basic detection rule catalog →
+            </Link>
+          </div>
+        </section>
+
         <section className="atlas-section atlas-intro">
           <div className="container atlas-two-column">
             <div>
