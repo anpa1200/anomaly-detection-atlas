@@ -109,8 +109,8 @@ const config = {
           title: 'Project',
           items: [
             {
-              label: 'ThreatMapper',
-              href: 'https://github.com/anpa1200/threatmapper',
+              label: 'ThreatMapper AI CTI Workbench',
+              href: 'https://1200km.com/threatmapper/',
             },
             {
               label: 'Medium',
