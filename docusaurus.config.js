@@ -82,7 +82,7 @@ const config = {
         { to: '/statistical-anomaly-taxonomy', label: 'Anomaly Taxonomy', position: 'left' },
         { to: '/security-log-source-taxonomy', label: 'Log Sources', position: 'left' },
         {
-          href: 'https://github.com/anpa1200/threatmapper/tree/main/anomaly_detection',
+          href: 'https://github.com/anpa1200/adversarygraph/tree/main/anomaly_detection',
           label: 'GitHub',
           position: 'right',
         },
@@ -110,8 +110,8 @@ const config = {
           title: 'Project',
           items: [
             {
-              label: 'ThreatMapper AI CTI Workbench',
-              href: 'https://1200km.com/threatmapper/',
+              label: 'AdversaryGraph AI CTI Workbench',
+              href: 'https://1200km.com/adversarygraph/',
             },
             {
               label: 'Medium',
