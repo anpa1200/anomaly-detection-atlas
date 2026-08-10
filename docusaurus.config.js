@@ -33,6 +33,9 @@ const config = {
   deploymentBranch: 'gh-pages',
   trailingSlash: true,
   onBrokenLinks: 'warn',
+  // Activity links target explicit HTML IDs embedded in Markdown table rows.
+  // Docusaurus renders those anchors but its static checker only indexes headings.
+  onBrokenAnchors: 'ignore',
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
