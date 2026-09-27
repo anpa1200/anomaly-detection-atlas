@@ -53,6 +53,13 @@ export default function Home() {
       </header>
 
       <main>
+        <section className="atlas-section atlas-section--surface" id="ttp-modules">
+          <div className="container">
+            <h2>Connect models to tools, simulations and detection rules</h2>
+            <p>Follow exact technique mappings into the reference workspaces. Published concepts and documented procedures are not live-validated detectors or simulations.</p>
+            <p><a href="https://1200km.com/ttp-simulation/tools/">Attack Tools</a> · <a href="https://1200km.com/ttp-simulation/">Attack Simulations</a> · <a href="https://1200km.com/ttp-simulation/detections/">Detection Rules</a> · <a href="https://1200km.com/ttp-simulation/telemetry/">Telemetry Library</a></p>
+          </div>
+        </section>
         <section className="atlas-section atlas-section--surface">
           <div className="container">
             <div className="atlas-section-heading">

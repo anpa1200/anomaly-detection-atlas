@@ -1120,3 +1120,116 @@ They can report data discovery, classification changes, data-owner actions, acce
 20. Shahin, M., Babar, M. A., and Zhu, L. (2017). Continuous integration, delivery and deployment: A systematic review on approaches, tools, challenges and practices. *IEEE Access*, 5, 3909-3943. https://doi.org/10.1109/ACCESS.2017.2685629
 21. Oliner, A., Ganapathi, A., and Xu, W. (2012). Advances and challenges in log analysis. *Communications of the ACM*, 55(2), 55-61. https://doi.org/10.1145/2076450.2076466
 22. He, S., Zhu, J., He, P., and Lyu, M. R. (2016). Experience report: System log analysis for anomaly detection. In *2016 IEEE 27th International Symposium on Software Reliability Engineering*, 207-218. https://doi.org/10.1109/ISSRE.2016.21
+
+<!-- ttp-modules:start -->
+## Connected attack and detection workspaces
+
+[Attack Tools](https://1200km.com/ttp-simulation/tools/) · [Attack Simulations](https://1200km.com/ttp-simulation/) · [Detection Rules](https://1200km.com/ttp-simulation/detections/) · [Telemetry Library](https://1200km.com/ttp-simulation/telemetry/) · [Linked Tags](https://1200km.com/ttp-simulation/tags/)
+
+These links follow exact active technique IDs or the published model's taxonomy references. They are navigation context, not proof of live simulation, sensor equivalence or detection effectiveness. Retired IDs are not silently migrated.
+
+- [T1003 OS Credential Dumping detections](https://1200km.com/ttp-simulation/detections/enterprise/T1003/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1003.006 DCSync detections](https://1200km.com/ttp-simulation/detections/enterprise/T1003.006/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1005 Data from Local System detections](https://1200km.com/ttp-simulation/detections/enterprise/T1005/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1020 Automated Exfiltration detections](https://1200km.com/ttp-simulation/detections/enterprise/T1020/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1021 Remote Services detections](https://1200km.com/ttp-simulation/detections/enterprise/T1021/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1021.001 Remote Desktop Protocol detections](https://1200km.com/ttp-simulation/detections/enterprise/T1021.001/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1021.002 SMB/Windows Admin Shares detections](https://1200km.com/ttp-simulation/detections/enterprise/T1021.002/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1021.004 SSH detections](https://1200km.com/ttp-simulation/detections/enterprise/T1021.004/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1021.006 Windows Remote Management detections](https://1200km.com/ttp-simulation/detections/enterprise/T1021.006/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1027 Obfuscated Files or Information detections](https://1200km.com/ttp-simulation/detections/enterprise/T1027/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1030 Data Transfer Size Limits detections](https://1200km.com/ttp-simulation/detections/enterprise/T1030/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1036 Masquerading detections](https://1200km.com/ttp-simulation/detections/enterprise/T1036/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1039 Data from Network Shared Drive detections](https://1200km.com/ttp-simulation/detections/enterprise/T1039/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1041 Exfiltration Over C2 Channel detections](https://1200km.com/ttp-simulation/detections/enterprise/T1041/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1046 Network Service Discovery detections](https://1200km.com/ttp-simulation/detections/enterprise/T1046/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1047 Windows Management Instrumentation detections](https://1200km.com/ttp-simulation/detections/enterprise/T1047/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1048 Exfiltration Over Alternative Protocol detections](https://1200km.com/ttp-simulation/detections/enterprise/T1048/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1052 Exfiltration Over Physical Medium detections](https://1200km.com/ttp-simulation/detections/enterprise/T1052/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1053 Scheduled Task/Job detections](https://1200km.com/ttp-simulation/detections/enterprise/T1053/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1055 Process Injection detections](https://1200km.com/ttp-simulation/detections/enterprise/T1055/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1057 Process Discovery detections](https://1200km.com/ttp-simulation/detections/enterprise/T1057/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1059 Command and Scripting Interpreter detections](https://1200km.com/ttp-simulation/detections/enterprise/T1059/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1059.001 PowerShell detections](https://1200km.com/ttp-simulation/detections/enterprise/T1059.001/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1059.003 Windows Command Shell detections](https://1200km.com/ttp-simulation/detections/enterprise/T1059.003/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1059.004 Unix Shell detections](https://1200km.com/ttp-simulation/detections/enterprise/T1059.004/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1059.005 Visual Basic detections](https://1200km.com/ttp-simulation/detections/enterprise/T1059.005/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1059.006 Python detections](https://1200km.com/ttp-simulation/detections/enterprise/T1059.006/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1059.007 JavaScript detections](https://1200km.com/ttp-simulation/detections/enterprise/T1059.007/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1068 Exploitation for Privilege Escalation detections](https://1200km.com/ttp-simulation/detections/enterprise/T1068/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1069 Permission Groups Discovery detections](https://1200km.com/ttp-simulation/detections/enterprise/T1069/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1070 Indicator Removal detections](https://1200km.com/ttp-simulation/detections/enterprise/T1070/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1070.004 File Deletion detections](https://1200km.com/ttp-simulation/detections/enterprise/T1070.004/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1070.006 Timestomp detections](https://1200km.com/ttp-simulation/detections/enterprise/T1070.006/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1071 Application Layer Protocol detections](https://1200km.com/ttp-simulation/detections/enterprise/T1071/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1071.001 Web Protocols detections](https://1200km.com/ttp-simulation/detections/enterprise/T1071.001/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1071.004 DNS detections](https://1200km.com/ttp-simulation/detections/enterprise/T1071.004/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1074 Data Staged detections](https://1200km.com/ttp-simulation/detections/enterprise/T1074/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1078 Valid Accounts detections](https://1200km.com/ttp-simulation/detections/enterprise/T1078/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1083 File and Directory Discovery detections](https://1200km.com/ttp-simulation/detections/enterprise/T1083/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1087 Account Discovery detections](https://1200km.com/ttp-simulation/detections/enterprise/T1087/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1090 Proxy detections](https://1200km.com/ttp-simulation/detections/enterprise/T1090/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1098 Account Manipulation detections](https://1200km.com/ttp-simulation/detections/enterprise/T1098/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1102 Web Service detections](https://1200km.com/ttp-simulation/detections/enterprise/T1102/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1105 Ingress Tool Transfer detections](https://1200km.com/ttp-simulation/detections/enterprise/T1105/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1110 Brute Force detections](https://1200km.com/ttp-simulation/detections/enterprise/T1110/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1110.001 Password Guessing detections](https://1200km.com/ttp-simulation/detections/enterprise/T1110.001/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1110.003 Password Spraying detections](https://1200km.com/ttp-simulation/detections/enterprise/T1110.003/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1110.004 Credential Stuffing detections](https://1200km.com/ttp-simulation/detections/enterprise/T1110.004/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1113 Screen Capture detections](https://1200km.com/ttp-simulation/detections/enterprise/T1113/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1114 Email Collection detections](https://1200km.com/ttp-simulation/detections/enterprise/T1114/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1114.003 Email Forwarding Rule detections](https://1200km.com/ttp-simulation/detections/enterprise/T1114.003/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1119 Automated Collection detections](https://1200km.com/ttp-simulation/detections/enterprise/T1119/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1133 External Remote Services detections](https://1200km.com/ttp-simulation/detections/enterprise/T1133/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1134 Access Token Manipulation detections](https://1200km.com/ttp-simulation/detections/enterprise/T1134/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1136 Create Account detections](https://1200km.com/ttp-simulation/detections/enterprise/T1136/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1190 Exploit Public-Facing Application detections](https://1200km.com/ttp-simulation/detections/enterprise/T1190/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1195 Supply Chain Compromise detections](https://1200km.com/ttp-simulation/detections/enterprise/T1195/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1203 Exploitation for Client Execution detections](https://1200km.com/ttp-simulation/detections/enterprise/T1203/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1204 User Execution detections](https://1200km.com/ttp-simulation/detections/enterprise/T1204/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1213 Data from Information Repositories detections](https://1200km.com/ttp-simulation/detections/enterprise/T1213/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1218 System Binary Proxy Execution detections](https://1200km.com/ttp-simulation/detections/enterprise/T1218/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1222 File and Directory Permissions Modification detections](https://1200km.com/ttp-simulation/detections/enterprise/T1222/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1485 Data Destruction detections](https://1200km.com/ttp-simulation/detections/enterprise/T1485/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1486 Data Encrypted for Impact detections](https://1200km.com/ttp-simulation/detections/enterprise/T1486/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1490 Inhibit System Recovery detections](https://1200km.com/ttp-simulation/detections/enterprise/T1490/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1496 Resource Hijacking detections](https://1200km.com/ttp-simulation/detections/enterprise/T1496/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1499 Endpoint Denial of Service detections](https://1200km.com/ttp-simulation/detections/enterprise/T1499/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1505.003 Web Shell detections](https://1200km.com/ttp-simulation/detections/enterprise/T1505.003/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1518 Software Discovery detections](https://1200km.com/ttp-simulation/detections/enterprise/T1518/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1518.001 Security Software Discovery detections](https://1200km.com/ttp-simulation/detections/enterprise/T1518.001/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1530 Data from Cloud Storage detections](https://1200km.com/ttp-simulation/detections/enterprise/T1530/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1531 Account Access Removal detections](https://1200km.com/ttp-simulation/detections/enterprise/T1531/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1543 Create or Modify System Process detections](https://1200km.com/ttp-simulation/detections/enterprise/T1543/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1547 Boot or Logon Autostart Execution detections](https://1200km.com/ttp-simulation/detections/enterprise/T1547/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1547.001 Registry Run Keys / Startup Folder detections](https://1200km.com/ttp-simulation/detections/enterprise/T1547.001/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1548 Abuse Elevation Control Mechanism detections](https://1200km.com/ttp-simulation/detections/enterprise/T1548/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1548.001 Setuid and Setgid detections](https://1200km.com/ttp-simulation/detections/enterprise/T1548.001/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1548.002 Bypass User Account Control detections](https://1200km.com/ttp-simulation/detections/enterprise/T1548.002/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1550.002 Pass the Hash detections](https://1200km.com/ttp-simulation/detections/enterprise/T1550.002/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1552 Unsecured Credentials detections](https://1200km.com/ttp-simulation/detections/enterprise/T1552/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1555 Credentials from Password Stores detections](https://1200km.com/ttp-simulation/detections/enterprise/T1555/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1558.003 Kerberoasting detections](https://1200km.com/ttp-simulation/detections/enterprise/T1558.003/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1565 Data Manipulation detections](https://1200km.com/ttp-simulation/detections/enterprise/T1565/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1566 Phishing detections](https://1200km.com/ttp-simulation/detections/enterprise/T1566/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1566.001 Spearphishing Attachment detections](https://1200km.com/ttp-simulation/detections/enterprise/T1566.001/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1566.002 Spearphishing Link detections](https://1200km.com/ttp-simulation/detections/enterprise/T1566.002/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1566.003 Spearphishing via Service detections](https://1200km.com/ttp-simulation/detections/enterprise/T1566.003/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1567 Exfiltration Over Web Service detections](https://1200km.com/ttp-simulation/detections/enterprise/T1567/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1570 Lateral Tool Transfer detections](https://1200km.com/ttp-simulation/detections/enterprise/T1570/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1572 Protocol Tunneling detections](https://1200km.com/ttp-simulation/detections/enterprise/T1572/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1573 Encrypted Channel detections](https://1200km.com/ttp-simulation/detections/enterprise/T1573/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1580 Cloud Infrastructure Discovery detections](https://1200km.com/ttp-simulation/detections/enterprise/T1580/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1583 Acquire Infrastructure detections](https://1200km.com/ttp-simulation/detections/enterprise/T1583/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1590 Gather Victim Network Information detections](https://1200km.com/ttp-simulation/detections/enterprise/T1590/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1595 Active Scanning detections](https://1200km.com/ttp-simulation/detections/enterprise/T1595/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1595.002 Vulnerability Scanning detections](https://1200km.com/ttp-simulation/detections/enterprise/T1595.002/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1595.003 Wordlist Scanning detections](https://1200km.com/ttp-simulation/detections/enterprise/T1595.003/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1608 Stage Capabilities detections](https://1200km.com/ttp-simulation/detections/enterprise/T1608/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1609 Container Administration Command detections](https://1200km.com/ttp-simulation/detections/enterprise/T1609/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1610 Deploy Container detections](https://1200km.com/ttp-simulation/detections/enterprise/T1610/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1611 Escape to Host detections](https://1200km.com/ttp-simulation/detections/enterprise/T1611/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1613 Container and Resource Discovery detections](https://1200km.com/ttp-simulation/detections/enterprise/T1613/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1621 Multi-Factor Authentication Request Generation detections](https://1200km.com/ttp-simulation/detections/enterprise/T1621/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+- [T1648 Serverless Execution detections](https://1200km.com/ttp-simulation/detections/enterprise/T1648/) — Model references this taxonomy entry; not a sensor-equivalence assertion
+<!-- ttp-modules:end -->
