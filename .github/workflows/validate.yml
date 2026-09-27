@@ -1,0 +1,40 @@
+name: Validate unified Atlas
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Check critical build dependency advisories
+        run: npm audit --package-lock-only --audit-level=critical
+      - name: Build generated research and route graph
+        run: npm run build
+      - name: Checkout pinned ecosystem references
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          repository: anpa1200/anpa1200.github.io
+          ref: d3a1844be03beb5ebba64673134f9956a25ccc4d
+          path: .site-reference
+      - name: Install locked accessibility checker
+        run: npm ci --prefix .site-reference
+      - name: Validate every route, anchor, figure, and ecosystem target
+        run: MAIN_SITE_ROOT="${GITHUB_WORKSPACE}/.site-reference" npm run check:research
+      - name: Desktop, mobile, accessible transcripts, and no-JavaScript checks
+        run: MAIN_SITE_ROOT="${GITHUB_WORKSPACE}/.site-reference" REPORT_DIR="${RUNNER_TEMP}/atlas-browser" node scripts/check-browser.mjs
+      - name: Preserve browser evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: atlas-browser-evidence
+          path: ${{ runner.temp }}/atlas-browser

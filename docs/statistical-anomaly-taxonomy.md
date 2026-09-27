@@ -1,5 +1,9 @@
 # Statistical Anomaly Taxonomy
 
+<!-- unified-research:start -->
+**Unified Atlas:** [research and illustrated explanations](https://1200km.com/anomaly-detection-atlas/research/) · [operational families](https://1200km.com/anomaly-detection-atlas/families/) · [model catalog](https://1200km.com/anomaly-detection-atlas/attack-statistical-anomaly-mapping/) · [telemetry contracts](https://1200km.com/anomaly-detection-atlas/research/telemetry/) · [validation boundaries](https://1200km.com/anomaly-detection-atlas/research/validation/). A taxonomy reference is not proof of a configured sensor or an effective detector.
+<!-- unified-research:end -->
+
 This document lists statistically relevant anomaly types without tying them to any specific application domain. An anomaly is an observation, group of observations, relationship, sequence, or distributional state that deviates meaningfully from an appropriate reference model.
 
 No single taxonomy is mutually exclusive. The same observation may simultaneously be, for example, a contextual, multivariate, local, and temporal anomaly. The categories below describe different statistical properties of anomalous data.
@@ -32,11 +36,19 @@ A contextual anomaly requires two classes of attributes: contextual attributes t
 
 ### 4. Collective Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 A group of observations is anomalous as a collection even though each individual observation may appear normal. The anomaly exists in the group's combined structure, frequency, ordering, shape, or relationship.
 
 Collective anomalies require a meaningful way to define groups or windows. They commonly occur in sequences, time series, spatial regions, repeated measurements, and transaction sets.
 
 ### 5. Conditional Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/) · [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/) · [Negative Anomaly (Absence)](https://1200km.com/anomaly-detection-atlas/families/negative-absence/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 An observation is anomalous because its value is improbable given the values of other variables. The observed value itself may be common, but the conditional combination is rare.
 
@@ -56,17 +68,29 @@ Academic grounding: [1, 2, 6, 7, 9].
 
 ### 7. Self-Baseline Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Geographic / ASN](https://1200km.com/anomaly-detection-atlas/families/geographic-asn/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 An entity or process deviates from its own historical distribution. The reference model is specific to the same entity rather than the complete population.
 
 This approach is useful when entities have stable but substantially different normal behaviors. It requires sufficient historical observations and becomes unreliable during cold-start periods or after legitimate permanent change.
 
 ### 8. Peer-Group Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Geographic / ASN](https://1200km.com/anomaly-detection-atlas/families/geographic-asn/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/) · [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 An entity deviates from a population of statistically comparable entities. Peers may be defined by known categories or discovered through clustering, similarity, latent representations, or matched covariates.
 
 Peer-group anomalies are especially useful when an entity has little history. Their quality depends on whether the selected peers are genuinely comparable and whether the peer group itself is sufficiently homogeneous.
 
 ### 9. Population Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 An observation or entity deviates from the distribution of the full reference population. Unlike a peer-group anomaly, the comparison is not limited to a selected subgroup.
 
@@ -98,11 +122,19 @@ They may be one-sided or two-sided and should account for skewness, heavy tails,
 
 ### 13. Count Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 The number of events or occurrences in a defined interval or group is unusual. Count anomalies are evaluated using count distributions or empirical count baselines.
 
 The expected variance matters. Poisson assumptions are often too restrictive when data are overdispersed, underdispersed, zero-inflated, or affected by seasonality.
 
 ### 14. Rate Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/) · [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 The number of events per unit of exposure is unusual. Exposure may be time, population size, area, number of opportunities, or another denominator.
 
@@ -110,11 +142,19 @@ Rate anomalies differ from count anomalies because a high count may be normal un
 
 ### 15. Volume Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/) · [Graph / Relationship](https://1200km.com/anomaly-detection-atlas/families/graph-relationship/) · [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/) · [Data Movement](https://1200km.com/anomaly-detection-atlas/families/data-movement/) · [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 The aggregate quantity accumulated over a window is unusual. Volume may combine many individual measurements and may represent a sum, total mass, total size, or total amount.
 
 Volume anomalies may result from more events, larger events, or both. Decomposing these components is often necessary to explain the anomaly.
 
 ### 16. Burst Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/) · [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Events occur in an unusually concentrated cluster over a short interval. A burst is defined by a temporary increase in local event intensity rather than merely a high total count over a long period.
 
@@ -122,11 +162,19 @@ Burst analysis should compare short-term intensity with both the normal backgrou
 
 ### 17. Drought or Silence Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Negative Anomaly (Absence)](https://1200km.com/anomaly-detection-atlas/families/negative-absence/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Expected observations or events fail to occur for an unusually long period. This is a negative anomaly based on absence rather than an observed extreme value.
 
 Detection requires an expectation that observations should occur. Irregular sampling, outages, censoring, and missing data must be distinguished from genuine absence.
 
 ### 18. Duration Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/) · [Geographic / ASN](https://1200km.com/anomaly-detection-atlas/families/geographic-asn/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 An event, state, or interval persists for an unusually short or long duration. The anomaly concerns elapsed time rather than event count or magnitude.
 
@@ -134,11 +182,19 @@ Duration distributions are often skewed or censored, so survival-analysis method
 
 ### 19. Inter-Arrival-Time Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/) · [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/) · [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 The time between consecutive events is unusual. Anomalies may be unexpectedly short gaps, unexpectedly long gaps, or a changed distribution of gaps.
 
 Inter-arrival analysis helps distinguish changes in event timing that aggregate counts can hide. It requires careful handling of nonstationary event rates.
 
 ### 20. Ratio or Proportion Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/) · [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 A ratio, share, composition percentage, or success fraction deviates from its expected range. The total volume may remain normal while the relative composition changes.
 
@@ -152,6 +208,10 @@ Academic grounding: [12-16].
 
 ### 21. Temporal-Context Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Geographic / ASN](https://1200km.com/anomaly-detection-atlas/families/geographic-asn/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/) · [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 An observation is unusual for its specific temporal context, such as time of day, day of week, season, phase, or position within a cycle. The same value may be normal at another time.
 
 The model must represent relevant periodic patterns and calendars. Otherwise, regular seasonality can be incorrectly flagged as anomalous.
@@ -163,6 +223,10 @@ The direction or slope of a series changes unexpectedly. This may be a sudden re
 Trend anomalies differ from point anomalies because individual values may remain within normal ranges while their sustained direction is unusual.
 
 ### 23. Level-Shift Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Negative Anomaly (Absence)](https://1200km.com/anomaly-detection-atlas/families/negative-absence/) · [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/) · [Data Movement](https://1200km.com/anomaly-detection-atlas/families/data-movement/) · [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 The mean or typical level of a process changes abruptly and remains at the new level. A level shift is a persistent structural change rather than a temporary spike.
 
@@ -176,6 +240,10 @@ Variance shifts can be more informative than level shifts when instability itsel
 
 ### 25. Change-Point Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 A statistically significant boundary separates two segments generated by different processes or parameter values. The changed property may be mean, variance, trend, frequency, correlation, or the full distribution.
 
 Change-point analysis identifies when a structural transition occurred. It does not automatically determine whether the new regime is undesirable or anomalous in a substantive sense.
@@ -188,11 +256,19 @@ Seasonal anomalies require enough history to estimate cycles and must accommodat
 
 ### 27. Periodicity Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/) · [Data Movement](https://1200km.com/anomaly-detection-atlas/families/data-movement/) · [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 The presence, absence, frequency, or strength of a repeating pattern is unusual. A process may acquire a new periodic cycle, lose an established cycle, or shift its dominant frequency.
 
 Periodicity anomalies are often examined using spectral density and autocorrelation in the frequency domain, or wavelet representations in the time-frequency domain.
 
 ### 28. Phase Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 A periodic process remains similar in shape and frequency but occurs earlier or later than expected. The anomaly is a displacement in phase rather than magnitude.
 
@@ -206,6 +282,10 @@ Shape anomalies commonly require subsequence comparison, functional-data analysi
 
 ### 30. Subsequence Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 A contiguous segment of a sequence or time series is unusual relative to other segments. The anomaly may involve its values, shape, transitions, or internal temporal structure.
 
 The choice of subsequence length strongly influences results. Variable-length methods are needed when anomalous patterns do not have a known duration.
@@ -218,11 +298,19 @@ Prediction intervals should account for horizon-dependent uncertainty, seasonali
 
 ### 32. Autocorrelation Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/) · [Data Movement](https://1200km.com/anomaly-detection-atlas/families/data-movement/) · [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 The dependence between observations at one or more time lags changes unexpectedly. Values may individually appear normal while their temporal dependence becomes unusual.
 
 This anomaly can indicate that a process has become more persistent, more alternating, or differently cyclical without a clear shift in mean or variance.
 
 ### 33. Synchronization Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/) · [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Multiple series become unusually synchronized, desynchronized, or phase-locked. The anomaly lies in their temporal coordination rather than in any single series.
 
@@ -235,6 +323,10 @@ This group treats the probability distribution itself as the object being monito
 Academic grounding: [17-20].
 
 ### 34. Distribution-Shift Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/) · [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 The probability distribution generating observations changes materially. Any combination of location, scale, shape, tails, modality, or category probabilities may change.
 
@@ -278,6 +370,10 @@ Models that forget old regimes too aggressively may repeatedly misclassify recur
 
 ### 41. Tail Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/) · [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/) · [Data Movement](https://1200km.com/anomaly-detection-atlas/families/data-movement/) · [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 An observation or group exhibits unusual behavior specifically in the extreme tail of a distribution. Tail anomalies concern rare extremes whose probabilities are poorly estimated by central-distribution models.
 
 Extreme-value methods are often appropriate. Heavy-tailed data require special care because apparently extreme observations may be expected more often than Gaussian assumptions suggest.
@@ -289,6 +385,10 @@ The number, location, size, or shape of modes in a distribution changes unexpect
 Summary statistics such as mean and variance can completely miss modality anomalies.
 
 ### 43. Entropy Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/) · [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 The uncertainty, diversity, or concentration of a distribution changes unexpectedly. Entropy may rise when outcomes become more dispersed or fall when they become unusually concentrated.
 
@@ -325,6 +425,10 @@ This group covers observations that become anomalous only when several variables
 Academic grounding: [2, 5-9, 21-23].
 
 ### 48. Multivariate Combination Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Geographic / ASN](https://1200km.com/anomaly-detection-atlas/families/geographic-asn/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/) · [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 An observation contains a combination of feature values that is unusual jointly, even though every individual feature value is common. The anomaly lies in the joint distribution.
 
@@ -404,11 +508,19 @@ Academic grounding: [1, 2, 12, 24, 25].
 
 ### 60. Sequence-Order Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Events occur in an unusual order even though the individual events are common. The anomaly is defined by the ordering relation.
 
 Sequence-order anomalies require a model of expected transitions or permissible orderings. They may be hidden when events are analyzed independently.
 
 ### 61. Transition Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/) · [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 A transition from one state or event type to another is unusually improbable. The states themselves may be normal, but the edge between them is rare.
 
@@ -464,11 +576,19 @@ Appropriate comparisons often depend on node type and role because different cla
 
 ### 69. Edge Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/) · [Geographic / ASN](https://1200km.com/anomaly-detection-atlas/families/geographic-asn/) · [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/) · [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 A relationship between two nodes is unusual because it is new, rare, unexpected, unusually weighted, or inconsistent with node attributes.
 
 Edge anomalies require a model of expected relationships. A globally rare edge may still be normal for a particular pair of node types.
 
 ### 70. Subgraph Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Graph / Relationship](https://1200km.com/anomaly-detection-atlas/families/graph-relationship/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 A connected group of nodes and edges has an unusual internal structure or relationship to the larger graph. Individual nodes and edges may not appear anomalous independently.
 
@@ -494,11 +614,19 @@ Different centrality measures capture different meanings. Anomaly claims must st
 
 ### 74. Graph-Path-Length Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Graph / Relationship](https://1200km.com/anomaly-detection-atlas/families/graph-relationship/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 The distance between nodes, or the route used to connect them, is unusually short, long, or improbable. This can indicate unexpected reachability or separation.
 
 Path-length anomalies require a stable definition of allowed edge types, direction, and weights.
 
 ### 75. Graph-Evolution Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Graph / Relationship](https://1200km.com/anomaly-detection-atlas/families/graph-relationship/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/) · [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 The graph changes unusually over time. Nodes, edges, communities, or structural metrics may appear, disappear, merge, split, or rewire at unexpected rates.
 
@@ -517,6 +645,10 @@ An unusually large or small number of source nodes connect to a destination node
 Fan-in anomalies are degree anomalies with a directional and often temporal interpretation.
 
 ### 78. Fan-Out Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/) · [Graph / Relationship](https://1200km.com/anomaly-detection-atlas/families/graph-relationship/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 A source node connects to an unusually large or small number of destination nodes within a relevant period or context.
 
@@ -566,11 +698,19 @@ Academic grounding: [2, 34, 35].
 
 ### 84. Rare-Category Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/) · [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/) · [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 A categorical value appears with unusually low frequency. The rarity may be global, contextual, entity-specific, or peer-relative.
 
 Rare categories are not automatically anomalous. Statistical treatment should account for expected long-tail behavior and sample size.
 
 ### 85. Novel-Category Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/) · [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/) · [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 A previously unseen categorical value appears. This is a special case of novelty detection where the observation lies outside the known category vocabulary.
 
@@ -578,11 +718,19 @@ Novel categories may represent genuine new states, data-entry variation, schema 
 
 ### 86. Category-Combination Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/) · [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/) · [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/) · [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 A combination of individually common categorical values is rare or previously unseen. The anomaly lies in co-occurrence rather than in any single category.
 
 Contingency models, association analysis, and probabilistic graphical models can represent expected combinations.
 
 ### 87. Categorical-Distribution Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/) · [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/) · [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 The frequency distribution across categories changes unexpectedly. New dominance, loss of diversity, or shifts among categories may occur without any novel category.
 
@@ -620,11 +768,19 @@ Reliable detection requires entity resolution, aligned timestamps, comparable de
 
 ### 92. Missing-Correspondence Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Negative Anomaly (Absence)](https://1200km.com/anomaly-detection-atlas/families/negative-absence/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 An observation appears in one source without an expected corresponding observation in another source. This is a cross-source negative anomaly.
 
 The expected correspondence and acceptable delay must be defined carefully because collection gaps can mimic the same pattern.
 
 ### 93. Cross-View Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 An entity appears normal under each individual representation but inconsistent when multiple views are considered jointly. Views may contain different feature sets, modalities, or measurement systems.
 
@@ -752,6 +908,10 @@ Hierarchical models help separate variation attributable to each level and ident
 
 ### 111. Persistent Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/) · [Data Movement](https://1200km.com/anomaly-detection-atlas/families/data-movement/) · [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 A deviation remains anomalous across multiple observations or periods. Persistence distinguishes sustained abnormal behavior from transient noise.
 
 Persistence can be defined through consecutive exceedances, accumulated anomaly score, or time spent outside an expected state.
@@ -764,11 +924,19 @@ Their importance depends on duration, magnitude, and the normal short-term volat
 
 ### 113. Emerging Anomaly
 
+<!-- atlas-context:start -->
+**Research in context:** [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 A weak deviation grows over time and becomes increasingly distinguishable from normal behavior. Early observations may not individually meet an anomaly threshold.
 
 Emerging anomalies require accumulation methods that detect consistent directional evidence without waiting for a fully developed extreme.
 
 ### 114. Cascading Anomaly
+
+<!-- atlas-context:start -->
+**Research in context:** [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 An anomaly in one component, variable, or level propagates through related components and produces a structured series of secondary deviations.
 

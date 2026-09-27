@@ -1,0 +1,584 @@
+{
+  "results": [
+    {
+      "width": 390,
+      "route": "",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "research/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "visuals/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "research/provenance/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "research/foundations/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 5,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/volumetric/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/frequency-rate/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/temporal/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/peer-group/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/sequence/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/graph-relationship/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/geographic-asn/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/identity-access/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/rare-process-service/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/parent-child/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/data-movement/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/protocol-application/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/negative-absence/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/state-change/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "families/multi-event-correlation/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "research/incidents/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "research/attack-mapping/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "research/cases/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 12,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "research/telemetry/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 10,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "research/credentials/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 4,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "research/visibility/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "research/queries/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 2,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "research/validation/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 3,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "research/references/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "attack-statistical-anomaly-mapping/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "statistical-anomaly-taxonomy/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "security-log-source-taxonomy/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "attack-basic-detection-rule-catalog/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 390,
+      "route": "attack-activity-log-source-catalog/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "research/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "visuals/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "research/provenance/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "research/foundations/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 5,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/volumetric/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/frequency-rate/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/temporal/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/peer-group/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/sequence/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/graph-relationship/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/geographic-asn/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/identity-access/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/rare-process-service/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/parent-child/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/data-movement/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/protocol-application/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/negative-absence/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/state-change/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "families/multi-event-correlation/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "research/incidents/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "research/attack-mapping/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "research/cases/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 12,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "research/telemetry/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 10,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "research/credentials/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 4,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "research/visibility/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 1,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "research/queries/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 2,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "research/validation/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 3,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "research/references/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "attack-statistical-anomaly-mapping/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "statistical-anomaly-taxonomy/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "security-log-source-taxonomy/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "attack-basic-detection-rule-catalog/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "width": 1440,
+      "route": "attack-activity-log-source-catalog/",
+      "h1": 1,
+      "overflow": false,
+      "figures": 0,
+      "violations": []
+    },
+    {
+      "mode": "light",
+      "violations": []
+    },
+    {
+      "mode": "no-js",
+      "route": "",
+      "links": 35
+    },
+    {
+      "mode": "no-js",
+      "route": "families/volumetric/",
+      "links": 51
+    },
+    {
+      "mode": "no-js",
+      "route": "research/queries/",
+      "links": 67
+    }
+  ],
+  "errors": []
+}

@@ -1,7 +1,7 @@
 // @ts-check
 const config = {
   title: 'Anomaly Detection Atlas',
-  tagline: 'A vendor-neutral reference for statistical anomalies and observable security telemetry.',
+  tagline: 'Research, evidence, statistical models, telemetry, and detection engineering in one Atlas.',
   favicon: 'img/favicon.svg',
 
   url: 'https://1200km.com',
@@ -10,29 +10,12 @@ const config = {
   organizationName: 'anpa1200',
   projectName: 'anomaly-detection-atlas',
 
-  headTags: [
-    {
-      tagName: 'script',
-      attributes: {
-        async: 'true',
-        src: 'https://www.googletagmanager.com/gtag/js?id=G-TMTG21RVHM',
-      },
-    },
-    {
-      tagName: 'script',
-      attributes: {},
-      innerHTML: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-TMTG21RVHM');
-      `,
-    },
-  ],
+  // Use the main site's consent-aware loader; do not start analytics unconditionally.
+  headTags: [{tagName:'script',attributes:{src:'https://1200km.com/assets/site-performance.js','data-google-analytics-id':'G-TMTG21RVHM',defer:'true'}}],
 
   deploymentBranch: 'gh-pages',
   trailingSlash: true,
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
   markdown: {
     hooks: {
       onBrokenMarkdownLinks: 'warn',
@@ -54,7 +37,7 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve('./src/css/custom.css'), require.resolve('./src/css/unified.css')],
         },
       },
     ],
@@ -70,25 +53,24 @@ const config = {
       },
     ],
     navbar: {
-      title: 'Anomaly Detection Atlas',
+      title: '1200km · Anomaly Atlas',
       logo: {
-        alt: 'Anomaly Detection Atlas',
-        src: 'img/logo.svg',
+        alt: '',
+        src: 'https://1200km.com/assets/ap-logo.png',
       },
       items: [
-        { to: '/attack-activity-log-source-catalog', label: 'ATT&CK Activities', position: 'left' },
-        { to: '/attack-basic-detection-rule-catalog', label: 'Basic Rules', position: 'left' },
-        { to: '/attack-statistical-anomaly-mapping', label: 'Anomaly Mappings', position: 'left' },
-        { to: '/statistical-anomaly-taxonomy', label: 'Anomaly Taxonomy', position: 'left' },
-        { to: '/security-log-source-taxonomy', label: 'Log Sources', position: 'left' },
+        { to: '/research', label: 'Research', position: 'left' },
+        { to: '/families', label: 'Families', position: 'left' },
+        { to: '/attack-statistical-anomaly-mapping', label: 'Models', position: 'left' },
+        { to: '/visuals', label: 'Visuals', position: 'left' },
         {
-          href: 'https://github.com/anpa1200/adversarygraph/tree/main/anomaly_detection',
+          href: 'https://github.com/anpa1200/anomaly-detection-atlas',
           label: 'GitHub',
           position: 'right',
         },
         {
-          href: 'https://medium.com/@1200km',
-          label: 'Medium',
+          href: 'https://1200km.com/',
+          label: '1200km home',
           position: 'right',
         },
       ],

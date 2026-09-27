@@ -1,0 +1,466 @@
+{
+  "families": [
+    {
+      "id": "volumetric",
+      "title": "Volumetric",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/volumetric/",
+      "tag": "anomaly-volumetric",
+      "models": [
+        "bulk-data-access",
+        "large-outbound-transfer",
+        "ransomware-encryption",
+        "service-disruption"
+      ],
+      "telemetry": [
+        "DC0078",
+        "DC0025",
+        "DC0055"
+      ],
+      "techniques": [
+        "T1078.004",
+        "T1499"
+      ]
+    },
+    {
+      "id": "frequency-rate",
+      "title": "Frequency / Rate",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/frequency-rate/",
+      "tag": "anomaly-frequency-rate",
+      "models": [
+        "password-guessing",
+        "password-spraying",
+        "mfa-fatigue",
+        "external-service-scanning",
+        "internal-service-scanning"
+      ],
+      "telemetry": [
+        "DC0002",
+        "DC0082",
+        "DC0084"
+      ],
+      "techniques": [
+        "T1499",
+        "T1110.003"
+      ]
+    },
+    {
+      "id": "temporal",
+      "title": "Temporal",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/temporal/",
+      "tag": "anomaly-temporal",
+      "models": [
+        "scheduled-execution",
+        "periodic-c2",
+        "external-remote-session",
+        "low-and-slow-exfiltration"
+      ],
+      "telemetry": [
+        "DC0001",
+        "DC0032",
+        "DC0078"
+      ],
+      "techniques": [
+        "T1071.004",
+        "T1053.005"
+      ]
+    },
+    {
+      "id": "peer-group",
+      "title": "Peer-Group",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/peer-group/",
+      "tag": "anomaly-peer-group",
+      "models": [
+        "privilege-elevation",
+        "cloud-enumeration",
+        "privileged-container",
+        "resource-hijacking",
+        "secret-retrieval"
+      ],
+      "telemetry": [
+        "DC0013",
+        "DC0110",
+        "DC0038"
+      ],
+      "techniques": [
+        "T1496"
+      ]
+    },
+    {
+      "id": "sequence",
+      "title": "Sequence",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/sequence/",
+      "tag": "anomaly-sequence",
+      "models": [
+        "phishing-delivery",
+        "phishing-execution-sequence",
+        "data-staging",
+        "lateral-tool-transfer",
+        "serverless-execution",
+        "container-exec"
+      ],
+      "telemetry": [
+        "DC0032",
+        "DC0067",
+        "DC0038"
+      ],
+      "techniques": [
+        "T1098.005",
+        "T1087.002"
+      ]
+    },
+    {
+      "id": "graph-relationship",
+      "title": "Graph / Relationship",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/graph-relationship/",
+      "tag": "anomaly-graph-relationship",
+      "models": [
+        "account-manipulation",
+        "remote-service-lateral-movement",
+        "process-injection",
+        "account-enumeration"
+      ],
+      "telemetry": [
+        "DC0066",
+        "DC0067",
+        "DC0082"
+      ],
+      "techniques": [
+        "T1098"
+      ]
+    },
+    {
+      "id": "geographic-asn",
+      "title": "Geographic / ASN",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/geographic-asn/",
+      "tag": "anomaly-geographic-asn",
+      "models": [
+        "valid-account-abuse",
+        "external-remote-session"
+      ],
+      "telemetry": [
+        "DC0002",
+        "DC0088",
+        "DC0078"
+      ],
+      "techniques": [
+        "T1078.004",
+        "T1110.003"
+      ]
+    },
+    {
+      "id": "identity-access",
+      "title": "Identity / Access",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/identity-access/",
+      "tag": "anomaly-identity-access",
+      "models": [
+        "valid-account-abuse",
+        "account-creation",
+        "account-manipulation",
+        "mail-forwarding-rule",
+        "secret-retrieval",
+        "password-spraying"
+      ],
+      "telemetry": [
+        "DC0002",
+        "DC0010",
+        "DC0007"
+      ],
+      "techniques": [
+        "T1098.005",
+        "T1550.001"
+      ]
+    },
+    {
+      "id": "rare-process-service",
+      "title": "Rare Process / Service",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/rare-process-service/",
+      "tag": "anomaly-rare-process-service",
+      "models": [
+        "command-interpreter-execution",
+        "service-persistence",
+        "masquerading",
+        "credential-dumping"
+      ],
+      "telemetry": [
+        "DC0032",
+        "DC0060",
+        "DC0034"
+      ],
+      "techniques": [
+        "T1087.002",
+        "T1040"
+      ]
+    },
+    {
+      "id": "parent-child",
+      "title": "Parent-Child Execution",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/parent-child/",
+      "tag": "anomaly-parent-child",
+      "models": [
+        "powershell-abuse",
+        "trusted-binary-proxy-execution",
+        "public-app-exploitation",
+        "phishing-execution-sequence"
+      ],
+      "telemetry": [
+        "DC0032",
+        "DC0029"
+      ],
+      "techniques": [
+        "T1059.001",
+        "T1059.003"
+      ]
+    },
+    {
+      "id": "data-movement",
+      "title": "Data Movement",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/data-movement/",
+      "tag": "anomaly-data-movement",
+      "models": [
+        "bulk-data-access",
+        "mailbox-collection",
+        "data-staging",
+        "large-outbound-transfer",
+        "web-service-exfiltration",
+        "low-and-slow-exfiltration"
+      ],
+      "telemetry": [
+        "DC0025",
+        "DC0055",
+        "DC0078"
+      ],
+      "techniques": [
+        "T1078.004",
+        "T1567.002"
+      ]
+    },
+    {
+      "id": "protocol-application",
+      "title": "Protocol / Application Usage",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/protocol-application/",
+      "tag": "anomaly-protocol-application",
+      "models": [
+        "dns-c2",
+        "dns-enumeration",
+        "periodic-c2",
+        "encrypted-channel",
+        "web-service-c2",
+        "public-web-enumeration"
+      ],
+      "telemetry": [
+        "DC0085",
+        "DC0078",
+        "DC0038"
+      ],
+      "techniques": [
+        "T1071.004"
+      ]
+    },
+    {
+      "id": "negative-absence",
+      "title": "Negative Anomaly (Absence)",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/negative-absence/",
+      "tag": "anomaly-negative-absence",
+      "models": [
+        "tool-disablement",
+        "indicator-removal",
+        "recovery-impairment"
+      ],
+      "telemetry": [
+        "DC0018",
+        "DC0090",
+        "DC0069"
+      ],
+      "techniques": [
+        "T1685.002",
+        "T1685"
+      ]
+    },
+    {
+      "id": "state-change",
+      "title": "State-Change",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/state-change/",
+      "tag": "anomaly-state-change",
+      "models": [
+        "autostart-change",
+        "service-persistence",
+        "firewall-impairment",
+        "account-creation",
+        "account-manipulation",
+        "mail-forwarding-rule",
+        "supply-chain-installation",
+        "data-destruction"
+      ],
+      "telemetry": [
+        "DC0066",
+        "DC0010",
+        "DC0069",
+        "DC0063"
+      ],
+      "techniques": [
+        "T1098",
+        "T1496",
+        "T1505.003"
+      ]
+    },
+    {
+      "id": "multi-event-correlation",
+      "title": "Multi-Event Correlation",
+      "url": "https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/",
+      "tag": "anomaly-multi-event-correlation",
+      "models": [
+        "phishing-execution-sequence",
+        "process-injection",
+        "lateral-tool-transfer",
+        "kerberoasting",
+        "obfuscated-content"
+      ],
+      "telemetry": [
+        "DC0032",
+        "DC0067",
+        "DC0038"
+      ],
+      "techniques": [
+        "T1098.005",
+        "T1567.002",
+        "T1087.002"
+      ]
+    }
+  ],
+  "chapters": [
+    {
+      "id": "foundations",
+      "title": "Foundations: from unusual activity to evidence",
+      "url": "https://1200km.com/anomaly-detection-atlas/research/foundations/",
+      "figures": [
+        "statistical-forms",
+        "definition-contextual",
+        "definition-collective",
+        "definition-correlation",
+        "base-rate"
+      ],
+      "techniques": [],
+      "tags": []
+    },
+    {
+      "id": "incidents",
+      "title": "Incident register and evidence boundaries",
+      "url": "https://1200km.com/anomaly-detection-atlas/research/incidents/",
+      "figures": [
+        "incident-register"
+      ],
+      "techniques": [
+        "T1685",
+        "T1685.002"
+      ],
+      "tags": []
+    },
+    {
+      "id": "attack-mapping",
+      "title": "ATT&CK mapping and version boundaries",
+      "url": "https://1200km.com/anomaly-detection-atlas/research/attack-mapping/",
+      "figures": [
+        "attack-mapping"
+      ],
+      "techniques": [],
+      "tags": []
+    },
+    {
+      "id": "cases",
+      "title": "Documented campaigns and detection interpretations",
+      "url": "https://1200km.com/anomaly-detection-atlas/research/cases/",
+      "figures": [
+        "case-sunburst",
+        "case-exchange",
+        "case-conti",
+        "case-oilrig",
+        "case-moveit",
+        "case-midnight",
+        "case-unc3944",
+        "case-storm",
+        "case-volt",
+        "case-apt41",
+        "case-impacket",
+        "case-3cx"
+      ],
+      "techniques": [],
+      "tags": []
+    },
+    {
+      "id": "telemetry",
+      "title": "Telemetry contracts and collection requirements",
+      "url": "https://1200km.com/anomaly-detection-atlas/research/telemetry/",
+      "figures": [
+        "telemetry-contract",
+        "source-windows",
+        "source-sysmon",
+        "source-edr",
+        "source-ndr",
+        "source-iam",
+        "source-cloud",
+        "dns-entropy",
+        "source-saas",
+        "source-prioritization"
+      ],
+      "techniques": [],
+      "tags": []
+    },
+    {
+      "id": "credentials",
+      "title": "Credential-access detection engineering",
+      "url": "https://1200km.com/anomaly-detection-atlas/research/credentials/",
+      "figures": [
+        "credential-kerberoast",
+        "credential-dcsync",
+        "credential-pth",
+        "credential-lsass"
+      ],
+      "techniques": [
+        "T1558.003",
+        "T1550.002"
+      ],
+      "tags": []
+    },
+    {
+      "id": "visibility",
+      "title": "Visibility limits and competing explanations",
+      "url": "https://1200km.com/anomaly-detection-atlas/research/visibility/",
+      "figures": [
+        "visibility-limits"
+      ],
+      "techniques": [],
+      "tags": []
+    },
+    {
+      "id": "queries",
+      "title": "Detection patterns and maintained KQL examples",
+      "url": "https://1200km.com/anomaly-detection-atlas/research/queries/",
+      "figures": [
+        "analytic-contract",
+        "validation-levels"
+      ],
+      "techniques": [],
+      "tags": []
+    },
+    {
+      "id": "validation",
+      "title": "Validation, baselines, and operational decisions",
+      "url": "https://1200km.com/anomaly-detection-atlas/research/validation/",
+      "figures": [
+        "operational-workflow",
+        "study-splits",
+        "study-results"
+      ],
+      "techniques": [],
+      "tags": []
+    },
+    {
+      "id": "references",
+      "title": "Sources, provenance, and further research",
+      "url": "https://1200km.com/anomaly-detection-atlas/research/references/",
+      "figures": [],
+      "techniques": [],
+      "tags": []
+    }
+  ]
+}

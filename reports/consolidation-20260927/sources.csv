@@ -1,0 +1,5 @@
+id,url,publisher,accessed,role,grade,limitation
+S001,https://1200km.com/articles/read/2026/2026-04-20-malicious-activity-as-a-statistical-signal-a-detection-engineering-analysis-of-anomaly-bas-90df8b6dea12/,Andrey Pautov,2026-09-27,primary consolidation input,A,author research not independent validation
+S002,https://1200km.com/anomaly-detection-atlas/attack-statistical-anomaly-mapping/,Andrey Pautov,2026-09-27,primary model catalog,A,web tool failed; local source read
+S003,https://csrc.nist.gov/pubs/sp/800/94/final,NIST,2026-09-27,publication version status,A,historical guidance
+S004,https://attack.mitre.org/resources/updates/updates-april-2026/,MITRE,2026-09-27,tactic version boundary,A,not every mapping reaudited

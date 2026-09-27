@@ -1,0 +1,35 @@
+/* Match the main 1200km blue/light-and-dark visual system. */
+:root { --ifm-color-primary:#2164bd; --ifm-color-primary-dark:#19549f; --ifm-color-primary-darker:#164b90; --ifm-color-primary-darkest:#123e77; --ifm-color-primary-light:#2f7df6; --ifm-color-primary-lighter:#5798fa; --ifm-color-primary-lightest:#70a7ff; --ifm-background-color:#f4f7fc; --ifm-background-surface-color:#fff; --atlas-ink:#11223a; --atlas-muted:#4d6079; --atlas-line:#d5deeb; --atlas-paper:#fff; --atlas-accent:#2164bd; }
+[data-theme='dark'] { --ifm-color-primary:#70a7ff; --ifm-color-primary-dark:#5798fa; --ifm-color-primary-darker:#3987f8; --ifm-color-primary-darkest:#2f7df6; --ifm-color-primary-light:#8ab7ff; --ifm-background-color:#07101f; --ifm-background-surface-color:#0d192d; --ifm-navbar-background-color:rgba(7,16,31,.96); --atlas-ink:#e8eef9; --atlas-muted:#b6c4d9; --atlas-line:#293a54; --atlas-paper:#0d192d; --atlas-accent:#70a7ff; }
+.atlas-hero { background:radial-gradient(circle at 80% 25%,rgba(47,125,246,.19),transparent 30rem),linear-gradient(135deg,#07101f,#102947); border-color:#293a54; }
+.atlas-hero .atlas-eyebrow { color:#9bc2ff; }
+.atlas-hero h1 { font-size:clamp(2.25rem,5.5vw,4.8rem); line-height:1.08; letter-spacing:-.035em; max-width:1050px; }
+.atlas-hero p { color:#d1deef; }
+.atlas-hero__content { padding:4rem 1.25rem; }
+.atlas-section { padding:3rem 0; }
+.atlas-route-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:1rem; }
+.atlas-card { border:1px solid var(--atlas-line); border-radius:12px; min-width:0; }
+.atlas-card h3 { font-size:1.15rem; }
+.atlas-family-links { display:flex; flex-wrap:wrap; gap:.7rem; }
+.atlas-family-links a { padding:.6rem .9rem; background:var(--atlas-paper); border:1px solid var(--atlas-line); border-radius:8px; }
+.atlas-two-column { grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:2rem; }
+.atlas-two-column h2 { font-size:clamp(1.75rem,3vw,2.6rem); }
+.anomaly-figure { margin:1.75rem 0; min-width:0; }
+.anomaly-figure-image,.anomaly-figure picture,.anomaly-figure img { display:block; width:100%; max-width:100%; }
+.anomaly-figure img { height:auto; border:1px solid var(--atlas-line); border-radius:10px; }
+.anomaly-figure figcaption { font-size:.9rem; margin-top:.75rem; line-height:1.65; color:var(--atlas-muted); }
+.anomaly-figure-evidence,.anomaly-figure-sources { display:block; margin-top:.4rem; }
+.anomaly-figure-evidence { font-weight:700; }
+.anomaly-figure-transcript { margin-top:.75rem; border:1px solid var(--atlas-line); border-radius:8px; padding:.75rem 1rem; }
+.anomaly-figure-transcript summary { cursor:pointer; font-weight:650; }
+.anomaly-figure-transcript pre { white-space:pre-wrap; overflow-wrap:break-word; }
+.theme-doc-markdown a,.atlas-section a { text-decoration:underline; text-underline-offset:.16em; }
+.theme-doc-markdown table { font-size:.92rem; line-height:1.65; }
+.theme-doc-markdown th,.theme-doc-markdown td { min-width:11rem; }
+a:focus-visible,summary:focus-visible { outline:3px solid var(--ifm-color-primary); outline-offset:3px; }
+@media(max-width:996px){.atlas-route-grid {grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:700px){.atlas-route-grid,.atlas-two-column {grid-template-columns:minmax(0,1fr);} .atlas-hero__content {padding:2.5rem 1rem;} .atlas-section {padding:2rem 0;} .atlas-family-links a {width:100%;} .atlas-actions .button {width:100%;white-space:normal;}}
+@media(prefers-reduced-motion:reduce){html {scroll-behavior:auto;}}
+.theme-doc-markdown table:focus-visible { outline:3px solid var(--ifm-color-primary); outline-offset:2px; }
+html[data-theme='dark'] { --ifm-background-color:#07101f; --ifm-background-surface-color:#0d192d; --ifm-font-color-base:#e8eef9; }
+html[data-theme='light'] { --ifm-background-color:#f4f7fc; --ifm-background-surface-color:#fff; }

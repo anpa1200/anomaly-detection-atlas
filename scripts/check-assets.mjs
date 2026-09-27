@@ -1,0 +1,16 @@
+import {readFileSync,writeFileSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {resolve} from 'node:path';
+import assert from 'node:assert/strict';
+const root=resolve(import.meta.dirname,'..');
+const manifest=JSON.parse(readFileSync(root+'/content/visuals.json'));
+const cover=JSON.parse(readFileSync(root+'/content/cover.json'));
+const assets=new Map(manifest.figures.flatMap(f=>Object.values(f.assets)).map(a=>[a.name,a]));
+const archive=process.env.ARCHIVE_SOURCE;
+if(archive)for(const a of assets.values())assert.equal(createHash('sha256').update(readFileSync(resolve(archive,'static/research/anomaly-visuals',a.name))).digest('hex'),a.sha256,a.name);
+const urls=[...assets.keys(),cover.file,cover.display.file].map(name=>'https://1200km.com/articles/research/anomaly-visuals/'+name);
+for(const name of ['contracts.json','functional-results.json','synthetic-study.json','bundle.json','README.md',...['password-spray','kerberoasting','dcsync','pass-the-hash','lsass-access','web-shell-lineage','dns-entropy','bulk-download'].map(n=>n+'.kql')])urls.push('https://1200km.com/articles/research/anomaly-validation/'+name);
+const records=[];
+for(let i=0;i<urls.length;i+=5)await Promise.all(urls.slice(i,i+5).map(async url=>{let last;for(let attempt=0;attempt<3;attempt++){try{const response=await fetch(url,{method:'HEAD',signal:AbortSignal.timeout(20000)});if(!response.ok)throw Error('HTTP '+response.status);const type=response.headers.get('content-type')||'';if(/\.(png|jpg|webp|svg)$/.test(url))assert.ok(type.startsWith('image/'),url+': '+type);records.push({url,status:response.status,type});return;}catch(error){last=error;}}throw Error(url+': '+last.message);}));
+writeFileSync('/tmp/unified-atlas-assets.json',JSON.stringify({checked:records.length,local_hashes:archive?assets.size:0,records},null,2));
+console.log(JSON.stringify({checked:records.length,local_hashes:archive?assets.size:0}));

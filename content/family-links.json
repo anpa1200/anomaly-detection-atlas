@@ -1,0 +1,17 @@
+{
+  "volumetric": {"models":["bulk-data-access","large-outbound-transfer","ransomware-encryption","service-disruption"],"telemetry":["DC0078","DC0025","DC0055"]},
+  "frequency-rate": {"models":["password-guessing","password-spraying","mfa-fatigue","external-service-scanning","internal-service-scanning"],"telemetry":["DC0002","DC0082","DC0084"]},
+  "temporal": {"models":["scheduled-execution","periodic-c2","external-remote-session","low-and-slow-exfiltration"],"telemetry":["DC0001","DC0032","DC0078"]},
+  "peer-group": {"models":["privilege-elevation","cloud-enumeration","privileged-container","resource-hijacking","secret-retrieval"],"telemetry":["DC0013","DC0110","DC0038"]},
+  "sequence": {"models":["phishing-delivery","phishing-execution-sequence","data-staging","lateral-tool-transfer","serverless-execution","container-exec"],"telemetry":["DC0032","DC0067","DC0038"]},
+  "graph-relationship": {"models":["account-manipulation","remote-service-lateral-movement","process-injection","account-enumeration"],"telemetry":["DC0066","DC0067","DC0082"]},
+  "geographic-asn": {"models":["valid-account-abuse","external-remote-session"],"telemetry":["DC0002","DC0088","DC0078"]},
+  "identity-access": {"models":["valid-account-abuse","account-creation","account-manipulation","mail-forwarding-rule","secret-retrieval","password-spraying"],"telemetry":["DC0002","DC0010","DC0007"]},
+  "rare-process-service": {"models":["command-interpreter-execution","service-persistence","masquerading","credential-dumping"],"telemetry":["DC0032","DC0060","DC0034"]},
+  "parent-child": {"models":["powershell-abuse","trusted-binary-proxy-execution","public-app-exploitation","phishing-execution-sequence"],"telemetry":["DC0032","DC0029"]},
+  "data-movement": {"models":["bulk-data-access","mailbox-collection","data-staging","large-outbound-transfer","web-service-exfiltration","low-and-slow-exfiltration"],"telemetry":["DC0025","DC0055","DC0078"]},
+  "protocol-application": {"models":["dns-c2","dns-enumeration","periodic-c2","encrypted-channel","web-service-c2","public-web-enumeration"],"telemetry":["DC0085","DC0078","DC0038"]},
+  "negative-absence": {"models":["tool-disablement","indicator-removal","recovery-impairment"],"telemetry":["DC0018","DC0090","DC0069"]},
+  "state-change": {"models":["autostart-change","service-persistence","firewall-impairment","account-creation","account-manipulation","mail-forwarding-rule","supply-chain-installation","data-destruction"],"telemetry":["DC0066","DC0010","DC0069","DC0063"]},
+  "multi-event-correlation": {"models":["phishing-execution-sequence","process-injection","lateral-tool-transfer","kerberoasting","obfuscated-content"],"telemetry":["DC0032","DC0067","DC0038"]}
+}
