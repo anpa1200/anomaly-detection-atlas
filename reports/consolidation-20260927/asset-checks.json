@@ -1,0 +1,406 @@
+{
+  "checked": 80,
+  "local_hashes": 65,
+  "records": [
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-point-anomaly.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/research-map.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/research-map-mobile.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-collective-anomaly.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-contextual-anomaly.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-volumetric.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/base-rate-mobile.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-frequency-rate.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-malicious-behaviour-correlation.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/base-rate.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-sequence.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-graph-relationship.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-temporal.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-geographic-asn.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-peer-group.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-data-movement.jpg",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-protocol-application.jpg",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-identity-access.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-parent-child.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-rare-process-service.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-incident-register.jpg",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-negative-absence.jpg",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-multi-event-correlation.jpg",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-state-change.jpg",
+      "status": 200,
+      "type": "image/jpeg"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/attack-mapping.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-case-sunburst.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/attack-mapping-mobile.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-case-exchange.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-case-conti.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-case-oilrig.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-case-storm.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-case-volt.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-case-unc3944.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-case-moveit.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-case-midnight.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/telemetry-contract.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-case-3cx.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/telemetry-contract-mobile.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-case-impacket.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-case-apt41.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-detection/individual/5_5_identity_access_management.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-detection/individual/5_4_network_detection_response.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-detection/individual/5_3_edr_platforms.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-detection/individual/5_2_sysmon.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-detection/individual/5_1_windows_security_event_log.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-detection/individual/5_8_saas_audit_logs.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-detection/individual/5_6_cloud_security_services.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-detection/individual/5_9_detection_source_prioritization_matrix.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-detection/individual/5_7_dns_security.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-credentials/individual/6_1_kerberoasting.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/visibility-limits.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/visibility-limits-mobile.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-credentials/individual/6_3_pass_the_hash.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-credentials/individual/6_2_dcsync.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/uploaded-credentials/individual/6_4_lsass_credential_dumping.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/analytic-contract-mobile.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/analytic-contract.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/operational-workflow.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/validation-levels.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/validation-levels-mobile.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/study-results.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/operational-workflow-mobile.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/study-splits-mobile.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/study-splits.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/study-results-mobile.svg",
+      "status": 200,
+      "type": "image/svg+xml"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/malicious-activity-statistical-signal-cover.webp",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/functional-results.json",
+      "status": 200,
+      "type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/synthetic-study.json",
+      "status": 200,
+      "type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/contracts.json",
+      "status": 200,
+      "type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-visuals/malicious-activity-statistical-signal-cover.png",
+      "status": 200,
+      "type": "image/png"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/README.md",
+      "status": 200,
+      "type": "text/markdown; charset=utf-8"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/kerberoasting.kql",
+      "status": 200,
+      "type": "application/octet-stream"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/bundle.json",
+      "status": 200,
+      "type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/dcsync.kql",
+      "status": 200,
+      "type": "application/octet-stream"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/password-spray.kql",
+      "status": 200,
+      "type": "application/octet-stream"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/web-shell-lineage.kql",
+      "status": 200,
+      "type": "application/octet-stream"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/pass-the-hash.kql",
+      "status": 200,
+      "type": "application/octet-stream"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/lsass-access.kql",
+      "status": 200,
+      "type": "application/octet-stream"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/dns-entropy.kql",
+      "status": 200,
+      "type": "application/octet-stream"
+    },
+    {
+      "url": "https://1200km.com/articles/research/anomaly-validation/bulk-download.kql",
+      "status": 200,
+      "type": "application/octet-stream"
+    }
+  ]
+}

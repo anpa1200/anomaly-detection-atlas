@@ -1,0 +1,10 @@
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Reviewed public ATT&CK identity keys and visual-source SHA-256 digests; not credentials"
+regexTarget = "match"
+regexes = [
+  '''key": "(?:enterprise|mobile|ics)/T[0-9]{4}(?:\.[0-9]{3})?"''',
+  '''(?:uploaded-credentials\.mjs|accessible_text\.json)": "[a-f0-9]{64}"''',
+]

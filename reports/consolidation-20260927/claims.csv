@@ -1,0 +1,11 @@
+id,claim,location,type,materiality,verdict,confidence,evidence,limit
+C001,14 operational families and one correlation pattern,source section 2,scope,high,Supported,high,source headings and generator assertion,not mutually exclusive classes
+C002,55 active figures preserved,research chapters,scope,high,Supported,high,manifest and generator assertion,not a new visual fact audit
+C003,54 catalog rows retain anchors,model catalog,scope,high,Supported,high,source row extraction,includes historical technique identifiers
+C004,Original article remains a publication snapshot,publication integration,implementation,high,Not checked,low,pending release verification,requires production check
+C005,NIST SP 800-94 dates to February 2007,provenance chapter,external fact,medium,Supported,high,NIST final publication page,newer draft never became final
+C006,ATT&CK v19 split Defense Evasion,version boundary,external fact,high,Supported,high,MITRE April 2026 release notes,does not migrate every old catalog mapping
+C007,Incident reports validate proposed detectors,inherited research interpretation,methodological,high,Contradicted,high,source expressly separates observations and hypotheses,no detector effectiveness asserted
+C008,Historical incident details remain independently verified now,inherited case corpus,review scope,high,Not checked,low,prior audit retained,no fresh full incident review
+C009,Query results establish production performance,inherited validation chapters,methodological,high,Contradicted,high,source test scope and explicit limitations,functional and synthetic evidence only
+C010,Exact ecosystem link identities exist,new crosslinks,implementation,high,Not checked,low,pending source and browser tests,existence does not imply semantic equivalence

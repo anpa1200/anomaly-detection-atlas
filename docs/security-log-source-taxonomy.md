@@ -1,5 +1,9 @@
 # Vendor-Neutral Security Log Source Taxonomy
 
+<!-- unified-research:start -->
+**Unified Atlas:** [research and illustrated explanations](https://1200km.com/anomaly-detection-atlas/research/) · [operational families](https://1200km.com/anomaly-detection-atlas/families/) · [model catalog](https://1200km.com/anomaly-detection-atlas/attack-statistical-anomaly-mapping/) · [telemetry contracts](https://1200km.com/anomaly-detection-atlas/research/telemetry/) · [validation boundaries](https://1200km.com/anomaly-detection-atlas/research/validation/). A taxonomy reference is not proof of a configured sensor or an effective detector.
+<!-- unified-research:end -->
+
 This document catalogs security-relevant log and telemetry source types without mapping them to vendors, detection rules, anomalies, or threat frameworks. Each entry describes what the source records and the kinds of activity it can report.
 
 A log source may be a primary producer of events, such as an operating system or application, or an aggregation layer, such as EDR, NDR, SIEM, or XDR. Aggregation layers commonly enrich, correlate, or summarize events produced by multiple underlying sources.
@@ -9,6 +13,10 @@ The taxonomy is grounded in established log-management guidance, protocol standa
 ## Endpoint Detection and Host Monitoring
 
 ### 1. Endpoint Detection and Response Telemetry
+
+<!-- atlas-context:start -->
+**Research in context:** [Graph / Relationship](https://1200km.com/anomaly-detection-atlas/families/graph-relationship/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/) · [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/) · [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Endpoint Detection and Response (EDR) telemetry records detailed activity from monitored workstations, servers, and other supported endpoints. It commonly combines process, file, registry, module, network, user-session, and sensor-health observations into a time-correlated endpoint activity stream.
 
@@ -34,11 +42,19 @@ They can report blocked or allowed execution attempts, exploit-prevention action
 
 ### 5. Endpoint Sensor Health Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Negative Anomaly (Absence)](https://1200km.com/anomaly-detection-atlas/families/negative-absence/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Endpoint sensor health logs record whether endpoint monitoring and protection agents are installed, active, updated, connected, and functioning correctly.
 
 They can report agent startup and shutdown, heartbeat status, policy synchronization, version changes, update failures, telemetry gaps, disabled protections, communication errors, and degraded monitoring coverage.
 
 ### 6. Process Execution Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/) · [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Process execution logs record the creation, termination, and identity of operating-system processes. Rich implementations include executable path, process identifier, parent process, user, command line, working directory, integrity level, hashes, and timestamps.
 
@@ -51,6 +67,10 @@ Command-line and shell history logs record commands entered or executed through 
 They can report administrative actions, file and directory operations, software execution, environment changes, network commands, account management, scripted activity, and sequences of interactive commands.
 
 ### 8. Script-Execution Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Script-execution logs record activity from scripting engines and automation runtimes. Depending on the engine, they may include script content, parsed commands, modules, execution context, session identifiers, and output.
 
@@ -76,11 +96,19 @@ They can report code-loading behavior, library search paths, unsigned or untrust
 
 ### 12. Memory-Protection and Exploit-Mitigation Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Graph / Relationship](https://1200km.com/anomaly-detection-atlas/families/graph-relationship/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/) · [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Memory-protection logs record events produced by exploit mitigations, runtime protections, or memory-integrity controls.
 
 They can report blocked memory operations, control-flow violations, stack or heap protection events, code-injection attempts, executable-memory creation, protected-process access, and mitigation failures.
 
 ### 13. File-System Activity Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/) · [Negative Anomaly (Absence)](https://1200km.com/anomaly-detection-atlas/families/negative-absence/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 File-system activity logs record access to files and directories. Depending on the source, they may capture creation, opening, reading, writing, renaming, moving, deletion, permission changes, and ownership changes.
 
@@ -94,11 +122,19 @@ They can report creation, modification, deletion, ownership changes, permission 
 
 ### 15. Registry and Configuration-Store Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Registry and configuration-store logs record reads and changes to structured operating-system or application configuration repositories.
 
 They can report creation, modification, and deletion of configuration values; changes to startup behavior; service configuration; security settings; application settings; and system policy changes.
 
 ### 16. Service and Daemon Management Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Service and daemon logs record installation, configuration, startup, shutdown, failure, and removal of background services.
 
@@ -106,17 +142,29 @@ They can report new service creation, service-account changes, executable-path c
 
 ### 17. Scheduled Task and Job Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Scheduled task and job logs record creation, modification, execution, completion, and deletion of operating-system or application scheduling entries.
 
 They can report recurring and one-time tasks, scheduled command execution, task owners, execution results, failed jobs, changed schedules, and automated maintenance activity.
 
 ### 18. Package and Software Installation Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Package and software installation logs record the installation, upgrade, repair, and removal of software packages, applications, libraries, and updates.
 
 They can report newly installed software, package-source activity, dependency changes, failed installations, update history, software removal, and installer execution.
 
 ### 19. Application-Control Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/) · [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Application-control logs record decisions made by allowlisting, denylisting, code-signing, reputation, or execution-policy controls.
 
@@ -129,6 +177,10 @@ Peripheral and removable-media logs record connections, disconnections, access, 
 They can report USB storage insertion, device identifiers, mounted volumes, data-access activity where available, blocked devices, printing, camera use, Bluetooth connections, and other peripheral activity.
 
 ### 21. Local Firewall Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Local firewall logs record network traffic and policy decisions made by a firewall running on an individual endpoint.
 
@@ -144,11 +196,19 @@ They can report queried names, query types, response codes, returned addresses, 
 
 ### 23. Windows Security Event Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/) · [Graph / Relationship](https://1200km.com/anomaly-detection-atlas/families/graph-relationship/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Windows Security event logs record security-auditing events generated by Windows when relevant audit policies are enabled.
 
 They can report successful and failed logons, account creation and changes, group membership changes, privilege use, object access, process creation where configured, policy changes, directory-service activity, scheduled tasks, service installation, and audit-log clearing.
 
 ### 24. Windows System Event Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Rare Process / Service](https://1200km.com/anomaly-detection-atlas/families/rare-process-service/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Windows System event logs record events generated by the operating system, drivers, and system services.
 
@@ -161,6 +221,10 @@ Windows Application event logs record events generated by applications and appli
 They can report application starts and failures, authentication events exposed by applications, database or service errors, application-specific operations, crashes, and configuration problems.
 
 ### 26. Windows PowerShell Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 PowerShell logs record PowerShell engine, provider, module, script-block, transcription, and operational activity when the relevant logging features are enabled.
 
@@ -197,6 +261,10 @@ Linux audit logs record security-relevant events produced by the kernel auditing
 They can report system calls, file access, permission and ownership changes, process execution, account changes, authentication activity, privilege use, security-policy changes, and access to monitored resources.
 
 ### 32. Linux Authentication Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/) · [Graph / Relationship](https://1200km.com/anomaly-detection-atlas/families/graph-relationship/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Linux authentication logs record authentication and authorization activity from local and remote access services.
 
@@ -242,11 +310,19 @@ They can report failing processes, faulting modules, exception types, stack trac
 
 ### 39. Identity Provider Sign-In Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Geographic / ASN](https://1200km.com/anomaly-detection-atlas/families/geographic-asn/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Identity provider sign-in logs record authentication attempts to centralized identity services.
 
 They can report successful and failed sign-ins, user and service identities, source addresses, applications, authentication methods, device context, session properties, conditional access outcomes, and failure reasons.
 
 ### 40. Identity Provider Audit Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Identity provider audit logs record administrative and configuration changes within an identity platform.
 
@@ -254,11 +330,19 @@ They can report account creation and deletion, credential changes, application r
 
 ### 41. Directory-Service Authentication Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Geographic / ASN](https://1200km.com/anomaly-detection-atlas/families/geographic-asn/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Directory-service authentication logs record authentication activity involving centralized directories and domain services.
 
 They can report ticket requests, credential validation, directory logons, failed authentication, account lockouts, protocol use, source systems, and service authentication.
 
 ### 42. Directory-Service Audit Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/) · [Graph / Relationship](https://1200km.com/anomaly-detection-atlas/families/graph-relationship/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Directory-service audit logs record changes and access to directory objects when auditing is enabled.
 
@@ -271,6 +355,10 @@ Privileged Access Management (PAM) logs record requests, approvals, grants, sess
 They can report privilege elevation, credential checkout, approval workflows, administrative session activity, password rotation, command recording where supported, and privileged-session termination.
 
 ### 44. Multi-Factor Authentication Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Multi-Factor Authentication (MFA) logs record challenges, responses, enrollment, device registration, and authentication-factor changes.
 
@@ -295,6 +383,10 @@ Certificate Authority (CA) and Public-Key Infrastructure (PKI) logs record certi
 They can report certificate enrollment, requester identity, certificate templates or profiles, approval activity, failed validation, revocation, key-management events, and CA configuration changes.
 
 ### 48. Remote Access and VPN Authentication Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Geographic / ASN](https://1200km.com/anomaly-detection-atlas/families/geographic-asn/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Remote-access and Virtual Private Network (VPN) logs record authentication and session activity for users and devices connecting remotely.
 
@@ -321,6 +413,10 @@ They can report credential access, secret retrieval, password rotation, policy c
 ## Network Infrastructure and Traffic Logs
 
 ### 52. Network Firewall Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Network firewall logs record traffic decisions and policy enforcement at network boundaries or segmentation points.
 
@@ -352,11 +448,19 @@ They can report wireless client connections, failed authentication, access-point
 
 ### 57. Network Flow Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/) · [Graph / Relationship](https://1200km.com/anomaly-detection-atlas/families/graph-relationship/) · [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/) · [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Network flow logs summarize network conversations without necessarily recording packet contents. Common fields include source and destination addresses, ports, protocol, byte counts, packet counts, direction, and duration.
 
 They can report communication relationships, connection volume, traffic direction, service use, scanning-like patterns, internal and external communication, and large or long-lived flows.
 
 ### 58. Packet-Capture Data
+
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Packet-capture data records complete or partial network packets observed at a collection point.
 
@@ -364,11 +468,19 @@ It can report protocol exchanges, payload contents when not encrypted, session b
 
 ### 59. Network Metadata Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Network metadata logs extract structured information from observed traffic without retaining full packet payloads.
 
 They can report sessions, protocols, application-layer fields, files, certificates, names, headers, request and response properties, and communication timing.
 
 ### 60. Network Detection and Response Telemetry
+
+<!-- atlas-context:start -->
+**Research in context:** [Frequency / Rate](https://1200km.com/anomaly-detection-atlas/families/frequency-rate/) · [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/) · [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Network Detection and Response (NDR) telemetry aggregates and analyzes packet, flow, protocol, and network metadata.
 
@@ -388,11 +500,19 @@ They can report blocked or allowed threats, rule matches, exploit attempts, prot
 
 ### 63. DNS Resolver Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 DNS resolver logs record name-resolution queries and responses handled by recursive or forwarding resolvers.
 
 They can report queried domains, query types, requesting clients, response codes, returned records, response times, recursion activity, and failed lookups.
 
 ### 64. Authoritative DNS Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Authoritative DNS logs record queries and administrative changes involving authoritative domain-name servers.
 
@@ -406,11 +526,19 @@ They can report device identifiers, assigned addresses, lease times, hostnames, 
 
 ### 66. Proxy and Secure Web Gateway Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Data Movement](https://1200km.com/anomaly-detection-atlas/families/data-movement/) · [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/) · [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Proxy and Secure Web Gateway logs record web requests and policy decisions for traffic passing through web-access controls.
 
 They can report requested URLs, domains, methods, users, source devices, response codes, content categories, transferred bytes, user agents, downloads, uploads, and blocked requests.
 
 ### 67. Web Application Firewall Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/) · [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Web Application Firewall (WAF) logs record inspected web requests, responses, and policy decisions for protected web applications.
 
@@ -436,11 +564,19 @@ They can report client geography, requested resources, cache hits and misses, re
 
 ### 71. TLS and Certificate Metadata Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 TLS metadata logs record properties of encrypted sessions without necessarily decrypting their contents.
 
 They can report protocol versions, cipher suites, server names, certificates, issuers, fingerprints, handshake outcomes, session reuse, and client or server TLS characteristics.
 
 ### 72. Email Gateway Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/) · [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Email gateway logs record messages processed by inbound, outbound, or internal mail gateways.
 
@@ -488,6 +624,10 @@ They can report policy changes, virtual-network creation, programmed flows, cont
 
 ### 79. Web Server Access Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/) · [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Web server access logs record requests received and responses returned by a web server.
 
 They can report client addresses, request methods, paths, query parameters where configured, response codes, transferred bytes, user agents, referrers, authentication identities, and request timing.
@@ -500,11 +640,19 @@ They can report failed requests, missing resources, application exceptions, perm
 
 ### 81. Application Audit Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/) · [Data Movement](https://1200km.com/anomaly-detection-atlas/families/data-movement/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Application audit logs record security-relevant and business-relevant actions performed within an application.
 
 They can report user logins, data access, record creation and modification, exports, permission changes, administrative actions, workflow changes, and application configuration changes.
 
 ### 82. Application Runtime Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Parent-Child Execution](https://1200km.com/anomaly-detection-atlas/families/parent-child/) · [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Application runtime logs record operational messages generated while an application executes.
 
@@ -529,6 +677,10 @@ API application logs record requests and operations handled by an API service it
 They can report called endpoints, request parameters where permitted, caller identity, object access, result codes, application errors, data changes, and service-to-service activity.
 
 ### 86. Database Audit Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/) · [Data Movement](https://1200km.com/anomaly-detection-atlas/families/data-movement/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Database audit logs record authentication, queries, object access, data changes, privilege use, and administrative activity within a database system.
 
@@ -560,6 +712,10 @@ They can report users, transferred files, source and destination addresses, tran
 
 ### 91. Collaboration Platform Audit Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Protocol / Application Usage](https://1200km.com/anomaly-detection-atlas/families/protocol-application/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Collaboration platform audit logs record activity involving messages, meetings, channels, shared files, and administration.
 
 They can report user access, message and channel activity, file sharing, external invitations, meeting participation, application integrations, permission changes, and administrative actions.
@@ -578,11 +734,19 @@ They can report pipeline execution, actor identity, source revisions, build comm
 
 ### 94. Artifact Repository Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Artifact repository logs record storage, retrieval, publication, deletion, and administration of software packages and build artifacts.
 
 They can report uploaded and downloaded artifacts, package versions, users or automation identities, source addresses, repository changes, metadata changes, and access failures.
 
 ### 95. Secrets-Management Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Secrets-management logs record creation, retrieval, rotation, deletion, and administration of secrets, keys, and credentials.
 
@@ -597,6 +761,10 @@ They can report record access, approvals, transactions, master-data changes, exp
 ## Email, Messaging, and Content Logs
 
 ### 97. Mailbox Audit Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/) · [Data Movement](https://1200km.com/anomaly-detection-atlas/families/data-movement/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Mailbox audit logs record actions performed within user and shared mailboxes.
 
@@ -616,11 +784,19 @@ They can report authentication outcomes, sending domains, source addresses, alig
 
 ### 100. Data Loss Prevention Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/) · [Data Movement](https://1200km.com/anomaly-detection-atlas/families/data-movement/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Data Loss Prevention (DLP) logs record content inspection and policy decisions involving sensitive information.
 
 They can report detected data classifications, users, source and destination channels, file or message actions, blocked or allowed transfers, policy matches, overrides, and administrative changes.
 
 ### 101. Content Inspection and Malware Scanning Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Multi-Event Correlation](https://1200km.com/anomaly-detection-atlas/families/multi-event-correlation/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Content inspection logs record the analysis of files, messages, web content, and other objects by scanning or sandboxing controls.
 
@@ -636,6 +812,10 @@ They can report label application and removal, document access, sharing, decrypt
 
 ### 103. Cloud Control-Plane Audit Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/) · [Negative Anomaly (Absence)](https://1200km.com/anomaly-detection-atlas/families/negative-absence/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Cloud control-plane audit logs record administrative API calls and configuration changes made to cloud resources.
 
 They can report resource creation, modification, and deletion; identity and access changes; network changes; storage configuration; service enablement; policy changes; and the identity responsible for each action.
@@ -647,6 +827,10 @@ Cloud data-plane logs record access to the contents or operational interfaces of
 They can report object reads and writes, database access, function invocation, message access, secret retrieval, file operations, and requests to hosted services.
 
 ### 105. Cloud Identity and Access Management Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Graph / Relationship](https://1200km.com/anomaly-detection-atlas/families/graph-relationship/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Cloud Identity and Access Management (IAM) logs record changes and use involving cloud users, roles, service identities, permissions, and credentials.
 
@@ -660,11 +844,19 @@ They can report source and destination addresses, ports, protocols, byte and pac
 
 ### 107. Cloud Firewall and Security-Group Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Cloud firewall logs record traffic decisions and configuration changes involving cloud-native network controls.
 
 They can report allowed and denied traffic, matched rules, source and destination resources, rule creation and modification, exposure changes, and policy enforcement.
 
 ### 108. Cloud Object-Storage Access Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/) · [Data Movement](https://1200km.com/anomaly-detection-atlas/families/data-movement/) · [State-Change](https://1200km.com/anomaly-detection-atlas/families/state-change/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Object-storage logs record requests involving buckets, containers, objects, and related policies.
 
@@ -677,6 +869,10 @@ Cloud compute logs record lifecycle and platform activity involving virtual mach
 They can report instance creation and deletion, startup and shutdown, metadata changes, attached storage, image changes, console access, health events, and administrative actions.
 
 ### 110. Cloud Function and Serverless Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Serverless logs record function invocation, execution, errors, dependencies, and configuration activity.
 
@@ -696,11 +892,19 @@ They can report encryption and decryption operations, callers, key-policy change
 
 ### 113. Cloud Secrets-Manager Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/) · [Identity / Access](https://1200km.com/anomaly-detection-atlas/families/identity-access/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Cloud secrets-manager logs record access and administration of managed secrets.
 
 They can report secret retrieval, creation, updates, rotation, deletion, requesting identities, access failures, and policy changes.
 
 ### 114. Cloud Resource-Configuration Inventory
+
+<!-- atlas-context:start -->
+**Research in context:** [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Cloud resource inventories record current and historical resource configuration and relationships.
 
@@ -720,6 +924,10 @@ They can report workload process and file activity, runtime behavior, network co
 
 ### 117. Cloud Billing and Usage Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Cloud billing and usage logs record resource consumption, service usage, and cost allocation.
 
 They can report consumed services, resource quantities, account and project usage, regional activity, cost changes, resource growth, and unusual consumption patterns.
@@ -727,6 +935,10 @@ They can report consumed services, resource quantities, account and project usag
 ## Container and Orchestration Logs
 
 ### 118. Container Runtime Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Container runtime logs record container creation, startup, execution, termination, image use, and runtime errors.
 
@@ -740,11 +952,19 @@ They can report application requests, errors, operational state, internal activi
 
 ### 120. Container Image Registry Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Container registry logs record image publication, retrieval, deletion, scanning, and administration.
 
 They can report image pushes and pulls, tags, digests, users or service identities, source addresses, repository changes, scanning outcomes, and access failures.
 
 ### 121. Orchestrator Audit Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Sequence](https://1200km.com/anomaly-detection-atlas/families/sequence/) · [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Container-orchestrator audit logs record requests to the orchestration control plane.
 
@@ -814,6 +1034,10 @@ They can report file or volume access, shares, snapshots, replication, permissio
 
 ### 132. Backup and Recovery Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Negative Anomaly (Absence)](https://1200km.com/anomaly-detection-atlas/families/negative-absence/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Backup and recovery logs record backup jobs, protected resources, restore operations, retention, and backup-system administration.
 
 They can report successful and failed backups, restores, deleted backups, changed retention policies, repository access, protected-system coverage, and administrative changes.
@@ -882,6 +1106,10 @@ They can report triggered workflows, enrichment queries, containment actions, an
 
 ### 143. Security Information and Event Management Logs
 
+<!-- atlas-context:start -->
+**Research in context:** [Negative Anomaly (Absence)](https://1200km.com/anomaly-detection-atlas/families/negative-absence/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
+
 Security Information and Event Management (SIEM) systems record ingestion, normalization, correlation, querying, alerting, and administrative activity across collected sources.
 
 They can report source ingestion status, parsing outcomes, correlation alerts, search activity, rule changes, user access, data retention, collector failures, and case-related activity.
@@ -907,6 +1135,10 @@ They can report case creation, assignment, status changes, analyst notes, eviden
 ## Data Platform and Observability Logs
 
 ### 147. Central Log Collector Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Negative Anomaly (Absence)](https://1200km.com/anomaly-detection-atlas/families/negative-absence/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Central log collector logs record receipt, forwarding, parsing, buffering, and failure of log data from source systems.
 
@@ -937,6 +1169,10 @@ Extract, Transform, and Load (ETL) logs record scheduled or triggered movement a
 They can report source extraction, transformation steps, destination loading, data volumes, failures, retries, schema mismatches, and job configuration changes.
 
 ### 152. Metrics and Monitoring-System Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Volumetric](https://1200km.com/anomaly-detection-atlas/families/volumetric/) · [Peer-Group](https://1200km.com/anomaly-detection-atlas/families/peer-group/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Metrics systems record numerical measurements about application, system, network, and service behavior over time.
 
@@ -1043,6 +1279,10 @@ Mobile operating-system logs record application, system, network, crash, and dia
 They can report application execution, permission use, system errors, network behavior, device state, crashes, and operating-system service activity.
 
 ### 169. Remote Desktop and Remote Support Logs
+
+<!-- atlas-context:start -->
+**Research in context:** [Temporal](https://1200km.com/anomaly-detection-atlas/families/temporal/) · [Geographic / ASN](https://1200km.com/anomaly-detection-atlas/families/geographic-asn/). Linked through catalog models that reference this definition; not a one-to-one taxonomy or sensor-equivalence claim.
+<!-- atlas-context:end -->
 
 Remote desktop and remote-support logs record interactive remote-control sessions.
 

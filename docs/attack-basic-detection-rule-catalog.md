@@ -1,5 +1,9 @@
 # Basic Detection Rules by MITRE ATT&CK TTP
 
+<!-- unified-research:start -->
+**Unified Atlas:** [research and illustrated explanations](https://1200km.com/anomaly-detection-atlas/research/) · [operational families](https://1200km.com/anomaly-detection-atlas/families/) · [model catalog](https://1200km.com/anomaly-detection-atlas/attack-statistical-anomaly-mapping/) · [telemetry contracts](https://1200km.com/anomaly-detection-atlas/research/telemetry/) · [validation boundaries](https://1200km.com/anomaly-detection-atlas/research/validation/). A taxonomy reference is not proof of a configured sensor or an effective detector.
+<!-- unified-research:end -->
+
 This catalog provides vendor-neutral algorithmic logic for basic deterministic detection rules mapped to MITRE ATT&CK Enterprise techniques and sub-techniques. Rules use signatures, fixed thresholds, allowlists, denylists, state changes, and bounded-window correlations. They do not depend on learned baselines or statistical anomaly models.
 
 Each rule is a starting point. Exact thresholds, approved lists, paths, ports, identities, and time windows must be adapted to the environment. Inline links point to log-source definitions capable of supplying the required events.

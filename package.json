@@ -5,7 +5,8 @@
   "description": "Vendor-neutral anomaly detection reference covering statistical anomalies and security telemetry sources.",
   "scripts": {
     "start": "docusaurus start",
-    "build": "docusaurus build",
+    "build": "node scripts/build-research.mjs --check && docusaurus build",
+    "check:research": "node scripts/build-research.mjs --check && node scripts/check-research.mjs",
     "serve": "docusaurus serve",
     "clear": "docusaurus clear"
   },

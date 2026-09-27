@@ -1,5 +1,9 @@
 # Suspicious and Malicious Activity by MITRE ATT&CK
 
+<!-- unified-research:start -->
+**Unified Atlas:** [research and illustrated explanations](https://1200km.com/anomaly-detection-atlas/research/) · [operational families](https://1200km.com/anomaly-detection-atlas/families/) · [model catalog](https://1200km.com/anomaly-detection-atlas/attack-statistical-anomaly-mapping/) · [telemetry contracts](https://1200km.com/anomaly-detection-atlas/research/telemetry/) · [validation boundaries](https://1200km.com/anomaly-detection-atlas/research/validation/). A taxonomy reference is not proof of a configured sensor or an effective detector.
+<!-- unified-research:end -->
+
 This catalog describes observable suspicious and malicious activity aligned to the current MITRE ATT&CK Enterprise tactics and techniques. Each activity links directly to the vendor-neutral log sources that can report it.
 
 ATT&CK techniques describe how adversaries achieve an objective. A single activity can map to multiple techniques, and a single technique can produce several observable activities. The listed log sources indicate potential observability, not guaranteed detection. Collection, audit policy, retention, and field availability still determine whether the activity is visible.
@@ -200,6 +204,5 @@ Most resource-development activity occurs outside the target environment. It bec
 [Attack Tools](https://1200km.com/ttp-simulation/tools/) · [Attack Simulations](https://1200km.com/ttp-simulation/) · [Detection Rules](https://1200km.com/ttp-simulation/detections/) · [Telemetry Library](https://1200km.com/ttp-simulation/telemetry/) · [Linked Tags](https://1200km.com/ttp-simulation/tags/)
 
 These links follow exact active technique IDs or the published model's taxonomy references. They are navigation context, not proof of live simulation, sensor equivalence or detection effectiveness. Retired IDs are not silently migrated.
-
 
 <!-- ttp-modules:end -->

@@ -1,0 +1,27 @@
+{
+  "imported": "2026-09-27",
+  "source_repository": "https://github.com/anpa1200/medium-blog-navigation",
+  "source_commit": "a94750828ed75dbce4c1e9a9f4ea1994fa785943",
+  "files": [
+    {
+      "source": "docs/articles/2026/2026-04-20-malicious-activity-as-a-statistical-signal-a-detection-engineering-analysis-of-anomaly-bas-90df8b6dea12.md",
+      "dest": "research-source.md",
+      "sha256": "1d1c6bc73fed27406b271920ffaaa1dd536a70d2b078cd838c78adf27c3261cd"
+    },
+    {
+      "source": "static/research/anomaly-visuals/manifest.json",
+      "dest": "visuals.json",
+      "sha256": "9524d3bd9f87b979a6549d7672cdc5d932b881798b25780ab5de21e2295afbe1"
+    },
+    {
+      "source": "static/research/anomaly-visuals/uploaded-cover-provenance.json",
+      "dest": "cover.json",
+      "sha256": "2723a535adf96111bf75b2a997abbb2e7379ec1e6eae0f9fa01b3c8ecc3c832f"
+    },
+    {
+      "source": "static/research/anomaly-incidents.json",
+      "dest": "incidents.json",
+      "sha256": "406ec9eb2bb24e730860774c11398376277369f31a4c8c425ca695ea86783cb8"
+    }
+  ]
+}
