@@ -1,5 +1,6 @@
 ---
 title: "SaaS downloads: distinguish a spike from missing collection"
+description: "Compare a SaaS download spike with collection gaps using unchanged volume queries, normalized fields, preserved fixture observations and suppression limits."
 ---
 
 # SaaS downloads: distinguish a spike from missing collection

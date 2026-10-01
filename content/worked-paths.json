@@ -70,7 +70,8 @@
         "anomaly-frequency-rate",
         "anomaly-identity-access",
         "anomaly-sequence"
-      ]
+      ],
+      "description": "Trace a tenant-local password-spray hypothesis through identity and source fields, the unchanged query, positive and benign fixtures, and fixed-bin limits."
     },
     {
       "id": "saas-downloads",
@@ -180,7 +181,8 @@
         "anomaly-volumetric",
         "anomaly-data-movement",
         "anomaly-temporal"
-      ]
+      ],
+      "description": "Compare a SaaS download spike with collection gaps using unchanged volume queries, normalized fields, preserved fixture observations and suppression limits."
     },
     {
       "id": "kerberoasting",
@@ -255,7 +257,8 @@
       "tags": [
         "anomaly-frequency-rate",
         "anomaly-identity-access"
-      ]
+      ],
+      "description": "Inspect the preserved Kerberoasting zero-match result: one public 4769 record, unchanged query requirements, synthetic fixtures and collection limits."
     }
   ],
   "functional_report_sha256": "3a868b49d7f9f702d68e495caecb1b2985c21522838c67d68136caebf7631795",
