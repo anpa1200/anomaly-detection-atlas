@@ -4,7 +4,7 @@
 **Unified Atlas:** [research and illustrated explanations](https://1200km.com/anomaly-detection-atlas/research/) · [operational families](https://1200km.com/anomaly-detection-atlas/families/) · [model catalog](https://1200km.com/anomaly-detection-atlas/attack-statistical-anomaly-mapping/) · [telemetry contracts](https://1200km.com/anomaly-detection-atlas/research/telemetry/) · [validation boundaries](https://1200km.com/anomaly-detection-atlas/research/validation/). A taxonomy reference is not proof of a configured sensor or an effective detector.
 <!-- unified-research:end -->
 
-This catalog describes observable suspicious and malicious activity aligned to the current MITRE ATT&CK Enterprise tactics and techniques. Each activity links directly to the vendor-neutral log sources that can report it.
+This catalog describes observable suspicious and malicious activity retaining the original MITRE ATT&CK Enterprise tactic and technique labels. Each activity links directly to the vendor-neutral log sources that can report it.
 
 ATT&CK techniques describe how adversaries achieve an objective. A single activity can map to multiple techniques, and a single technique can produce several observable activities. The listed log sources indicate potential observability, not guaranteed detection. Collection, audit policy, retention, and field availability still determine whether the activity is visible.
 

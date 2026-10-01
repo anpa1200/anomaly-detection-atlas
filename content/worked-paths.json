@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "editorial_reviewed_at": "2026-10-01",
+  "evidence_date": "2026-09-21",
+  "source_commit": "a94750828ed75dbce4c1e9a9f4ea1994fa785943",
+  "scope": "Entry paths to preserved research; reported engine results were not rerun in this editorial change.",
+  "entries": [
+    {
+      "id": "password-spray",
+      "title": "Password spraying: correlate attempted identities, then success",
+      "query": "password-spray",
+      "table": "SigninEvents",
+      "anchor": "distributed-password-spray--rate-and-shape",
+      "hypothesis": "A tenant-local failure burst across multiple identities and sources is followed by success for an identity actually attempted in that burst. This is an investigation candidate, not proof that the successful account was compromised.",
+      "model": "The existing fixed 15-minute bin requires at least six 50126 failures, three accounts and two sources, then completed success (0) after that identity’s last failure within 30 minutes.",
+      "fixtures": [
+        "spray-success-after-own-failures",
+        "spray-unrelated-user",
+        "spray-other-tenant",
+        "spray-50140-not-success",
+        "spray-fixed-bin-boundary-known-blind-spot"
+      ],
+      "limitations": "Shared proxies and outages can resemble a burst. Failure-only, low-volume, unresolved-identity and cross-bin activity can be missed. The boundary fixture deliberately expects no result; a passing regression does not mean the attack was detected.",
+      "fields": "TimeGenerated:datetime,TenantId:string,UserId:string,EventId:string,IPAddress:string,ResultType:string",
+      "observed_fixtures": [
+        {
+          "name": "spray-success-after-own-failures",
+          "expected": [
+            [
+              "tenant1",
+              "u0",
+              "s1"
+            ]
+          ],
+          "actual": [
+            [
+              "tenant1",
+              "u0",
+              "s1"
+            ]
+          ],
+          "passed": true
+        },
+        {
+          "name": "spray-unrelated-user",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "name": "spray-other-tenant",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "name": "spray-50140-not-success",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "name": "spray-fixed-bin-boundary-known-blind-spot",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        }
+      ],
+      "tags": [
+        "anomaly-frequency-rate",
+        "anomaly-identity-access",
+        "anomaly-sequence"
+      ]
+    },
+    {
+      "id": "saas-downloads",
+      "title": "SaaS downloads: distinguish a spike from missing collection",
+      "query": "bulk-download",
+      "table": "DailyDownloads",
+      "anchor": "saas-bulk-download-anomaly-m365-sharepoint--onedrive",
+      "hypothesis": "A user’s complete observed UTC-day download count differs materially from that same tenant/user’s historical daily counts. Missing collection must remain missing, not become an observed zero.",
+      "model": "Use the existing median/MAD example and explicit zero-MAD policy over comparable complete daily rows; preserve insufficient-history and missing-telemetry states instead of dropping the entity. Counts are audit events, not unique files or bytes.",
+      "fixtures": [
+        "bulk-zero-mad-spike",
+        "bulk-zero-mad-small-change",
+        "bulk-cold-start",
+        "bulk-missing-history-not-zero",
+        "bulk-current-outage",
+        "bulk-current-null-count"
+      ],
+      "limitations": "Approved migrations, backups and workload changes can explain a spike. The fixture threshold is illustrative. Independent completeness monitoring and a native connector adapter are required; no SaaS production negative corpus or connector is validated.",
+      "fields": "TenantId:string,UserId:string,Day:datetime,Count:long,Complete:bool",
+      "observed_fixtures": [
+        {
+          "name": "bulk-zero-mad-spike",
+          "expected": [
+            [
+              "above-baseline"
+            ]
+          ],
+          "actual": [
+            [
+              "above-baseline"
+            ]
+          ],
+          "passed": true
+        },
+        {
+          "name": "bulk-zero-mad-small-change",
+          "expected": [
+            [
+              "within-baseline"
+            ]
+          ],
+          "actual": [
+            [
+              "within-baseline"
+            ]
+          ],
+          "passed": true
+        },
+        {
+          "name": "bulk-cold-start",
+          "expected": [
+            [
+              "insufficient-history"
+            ]
+          ],
+          "actual": [
+            [
+              "insufficient-history"
+            ]
+          ],
+          "passed": true
+        },
+        {
+          "name": "bulk-missing-history-not-zero",
+          "expected": [
+            [
+              "insufficient-history"
+            ]
+          ],
+          "actual": [
+            [
+              "insufficient-history"
+            ]
+          ],
+          "passed": true
+        },
+        {
+          "name": "bulk-current-outage",
+          "expected": [
+            [
+              "missing-telemetry"
+            ]
+          ],
+          "actual": [
+            [
+              "missing-telemetry"
+            ]
+          ],
+          "passed": true
+        },
+        {
+          "name": "bulk-current-null-count",
+          "expected": [
+            [
+              "missing-telemetry"
+            ]
+          ],
+          "actual": [
+            [
+              "missing-telemetry"
+            ]
+          ],
+          "passed": true
+        }
+      ],
+      "tags": [
+        "anomaly-volumetric",
+        "anomaly-data-movement",
+        "anomaly-temporal"
+      ]
+    },
+    {
+      "id": "kerberoasting",
+      "title": "Kerberoasting: retain the real zero-match result",
+      "query": "kerberoasting",
+      "table": "WindowsEvents",
+      "anchor": "kerberoasting--rc4-tgs-volume",
+      "hypothesis": "A principal requests successful service tickets for an unusually broad set of service identifiers in a bounded window. This breadth hypothesis cannot cover every Kerberoasting execution.",
+      "model": "The existing query filters successful 4769 events, deduplicates evidence, includes AES, excludes krbtgt and requires five distinct services in 15 minutes.",
+      "fixtures": [
+        "kerberoast-aes-breadth",
+        "kerberoast-machine-principal-not-hidden",
+        "kerberoast-low-volume-known-blind-spot",
+        "kerberoast-krbtgt-not-counted",
+        "kerberoast-repeated-service-not-breadth"
+      ],
+      "recording": "kerberoasting",
+      "limitations": "The pinned public recording has one input record and zero output rows: it is below the breadth threshold. That is a known miss, not evidence of benignness. Repeated requests for one service and low-volume activity remain outside the rule; machine principals are not automatically excluded.",
+      "fields": "TimeGenerated:datetime,Computer:string,EvidenceId:string,EventID:int,Principal:string,SourceIP:string,LogonId:string,AccessMask:long,ObjectType:string,Properties:string,ServiceName:string,EncryptionType:string,ResultCode:string,LogonType:int,LogonProcess:string,AuthenticationPackage:string",
+      "observed_fixtures": [
+        {
+          "name": "kerberoast-aes-breadth",
+          "expected": [
+            [
+              "user",
+              5
+            ]
+          ],
+          "actual": [
+            [
+              "user",
+              5
+            ]
+          ],
+          "passed": true
+        },
+        {
+          "name": "kerberoast-machine-principal-not-hidden",
+          "expected": [
+            [
+              "computer$",
+              5
+            ]
+          ],
+          "actual": [
+            [
+              "computer$",
+              5
+            ]
+          ],
+          "passed": true
+        },
+        {
+          "name": "kerberoast-low-volume-known-blind-spot",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "name": "kerberoast-krbtgt-not-counted",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        },
+        {
+          "name": "kerberoast-repeated-service-not-breadth",
+          "expected": [],
+          "actual": [],
+          "passed": true
+        }
+      ],
+      "tags": [
+        "anomaly-frequency-rate",
+        "anomaly-identity-access"
+      ]
+    }
+  ],
+  "functional_report_sha256": "3a868b49d7f9f702d68e495caecb1b2985c21522838c67d68136caebf7631795",
+  "contracts_sha256": "6e0279d6c444d8cab0208376b8de1df27ac25a50f7e5c5a95026648c8f398a16"
+}
