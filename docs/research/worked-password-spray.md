@@ -1,5 +1,6 @@
 ---
 title: "Password spraying: correlate attempted identities, then success"
+description: "Trace a tenant-local password-spray hypothesis through identity and source fields, the unchanged query, positive and benign fixtures, and fixed-bin limits."
 ---
 
 # Password spraying: correlate attempted identities, then success

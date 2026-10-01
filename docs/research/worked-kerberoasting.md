@@ -1,5 +1,6 @@
 ---
 title: "Kerberoasting: retain the real zero-match result"
+description: "Inspect the preserved Kerberoasting zero-match result: one public 4769 record, unchanged query requirements, synthetic fixtures and collection limits."
 ---
 
 # Kerberoasting: retain the real zero-match result
