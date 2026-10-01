@@ -1,5 +1,7 @@
+const applyTechnicalSitemap = require('./technical-seo-sitemap.cjs');
 // @ts-check
 const config = {
+  plugins: ['./technical-seo-plugin.cjs'],
   title: 'Anomaly Detection Atlas',
   tagline: 'A vendor-neutral reference for statistical anomalies and observable security telemetry.',
   favicon: 'img/favicon.svg',
@@ -133,4 +135,5 @@ const config = {
   },
 };
 
+applyTechnicalSitemap(config);
 module.exports = config;

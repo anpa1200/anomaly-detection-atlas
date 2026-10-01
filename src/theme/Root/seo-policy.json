@@ -1,0 +1,69 @@
+{
+  "prefix": "/anomaly-detection-atlas/",
+  "pages": {
+    "/anomaly-detection-atlas/": {
+      "classification": "Priority",
+      "reason": "Substantive practitioner content or established navigation entry point",
+      "word_count": 267,
+      "title": "Anomaly Detection Atlas | 1200km",
+      "description": "Explore vendor-neutral anomaly types, security telemetry and ATT&CK-aligned activity, separating statistical signals from deterministic detection rules."
+    },
+    "/anomaly-detection-atlas/attack-activity-log-source-catalog/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 2813,
+      "title": "Suspicious and Malicious Activity by MITRE ATT&CK | 1200km",
+      "description": "Connect ATT&CK-aligned suspicious activity with the vendor-neutral log sources that can report it, using the catalog to identify relevant telemetry."
+    },
+    "/anomaly-detection-atlas/attack-basic-detection-rule-catalog/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 2839,
+      "title": "Basic Detection Rules by MITRE ATT&CK TTP | 1200km",
+      "description": "Review deterministic ATT&CK detections using signatures, thresholds, lists and bounded correlations, distinct from learned baselines or anomaly models."
+    },
+    "/anomaly-detection-atlas/attack-statistical-anomaly-mapping/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 3989,
+      "title": "ATT&CK Activity as Statistical Anomalies | 1200km",
+      "description": "Connect ATT&CK activity with reference populations, expected behavior and measurable deviation, identifying anomaly types and logs needed to study them."
+    },
+    "/anomaly-detection-atlas/security-log-source-taxonomy/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 8125,
+      "title": "Vendor-Neutral Security Log Source Taxonomy | 1200km",
+      "description": "Identify security log and telemetry source types by what they record, using a vendor-neutral taxonomy without assuming a detection or threat model."
+    },
+    "/anomaly-detection-atlas/statistical-anomaly-taxonomy/": {
+      "classification": "Supporting",
+      "reason": "Substantive supporting reference or documentation",
+      "word_count": 8633,
+      "title": "Statistical Anomaly Taxonomy | Anomaly Detection Atlas",
+      "description": "Distinguish statistical anomaly types across observations, relationships, sequences and distributions, using reference models to define deviation."
+    }
+  },
+  "gitHistory": true,
+  "person": {
+    "@type": "Person",
+    "@id": "https://1200km.com/#person",
+    "name": "Andrey Pautov",
+    "url": "https://1200km.com/",
+    "sameAs": [
+      "https://github.com/anpa1200",
+      "https://medium.com/@1200km",
+      "https://www.linkedin.com/in/andrey-pautov/",
+      "https://infosecwriteups.com/@1200km"
+    ]
+  },
+  "website": {
+    "@type": "WebSite",
+    "@id": "https://1200km.com/#website",
+    "url": "https://1200km.com/",
+    "name": "1200km Security Research",
+    "publisher": {
+      "@id": "https://1200km.com/#person"
+    }
+  }
+}
