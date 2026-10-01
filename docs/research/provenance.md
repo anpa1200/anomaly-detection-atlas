@@ -34,6 +34,12 @@ The reported functional tests, public-recording replay, and synthetic study are 
 
 [NIST SP 800-94](https://csrc.nist.gov/pubs/sp/800/94/final) is a February 2007 publication; its proposed revision did not become final. It supplies historical definitions, not a claim of a new standard. [MITRE's April 2026 release notes](https://attack.mitre.org/resources/updates/updates-april-2026/) document the Defense Evasion split into Stealth and Defense Impairment. Retained old catalog IDs are not silently migrated or counted as current-ID coverage.
 
+## Maintained entry paths and result boundaries
+
+[Password spraying](worked-password-spray.md) · [SaaS downloads](worked-saas-downloads.md) · [Kerberoasting zero-match](worked-kerberoasting.md). These entry paths reuse the original eight query examples, 34 reported functional fixtures and public-recording observations. They add navigation and evidence presentation, not new engine results. Catalog scope remains 54 rows, 118 overlapping concepts and 175 telemetry categories, with 14 operational families plus correlation. None is a count of validated detectors.
+
+The 2688-entity-day sensitivity study is synthetic: the extra gate reduced false positives from 85 to 8 while true positives fell from 18 to 11. Both sides of the trade-off remain visible.
+
 ## Continue
 
 [Research path](https://1200km.com/anomaly-detection-atlas/research/) · [Family index](https://1200km.com/anomaly-detection-atlas/families/) · [Model catalog](https://1200km.com/anomaly-detection-atlas/attack-statistical-anomaly-mapping/) · [Visual index](https://1200km.com/anomaly-detection-atlas/visuals/) · [Source repository](https://github.com/anpa1200/anomaly-detection-atlas)

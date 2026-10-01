@@ -95,6 +95,8 @@ Most resource-development TTPs occur outside defender-controlled systems and lac
 
 ## Defense Evasion
 
+**Historical grouping retained:** the maintained research edition uses Enterprise ATT&CK v19.2 and explains the April 2026 split into Stealth and Defense Impairment. These catalog rows and old identifiers are preserved for compatibility, not asserted as current taxonomy. [Version context](https://1200km.com/anomaly-detection-atlas/research/attack-mapping/).
+
 | ATT&CK TTP | Basic algorithmic detection logic | Relevant log sources |
 |---|---|---|
 | [T1036 Masquerading](https://attack.mitre.org/techniques/T1036/) · [simulation](https://1200km.com/ttp-simulation/techniques/enterprise/T1036/) · [detections](https://1200km.com/ttp-simulation/detections/enterprise/T1036/) | `MATCH(filename_or_service_name IN trusted_names) AND hash_or_path_or_publisher NOT_IN approved_values -> ALERT` | [Process Execution Logs](security-log-source-taxonomy.md#6-process-execution-logs), [File-System Activity Logs](security-log-source-taxonomy.md#13-file-system-activity-logs), [Application-Control Logs](security-log-source-taxonomy.md#19-application-control-logs) |

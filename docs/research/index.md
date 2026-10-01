@@ -17,6 +17,14 @@ import ResearchCover from '@site/src/components/ResearchCover';
 
 Use the research to decide what a deviation means, the catalogs to select a measurable model, and the linked workspaces to inspect collection and validation requirements. An unusual observation is a lead—not proof of compromise, attribution, or permission to contain a system.
 
+## Three evidence-led entry paths
+
+- [Password spraying: correlate attempted identities, then success](https://1200km.com/anomaly-detection-atlas/research/worked-password-spray/)
+- [SaaS downloads: distinguish a spike from missing collection](https://1200km.com/anomaly-detection-atlas/research/worked-saas-downloads/)
+- [Kerberoasting: retain the real zero-match result](https://1200km.com/anomaly-detection-atlas/research/worked-kerberoasting/)
+
+Each follows hypothesis → required fields → unchanged query/model → positive and benign/boundary fixtures → reported result → limitations.
+
 ## Start with a question
 
 - **What looks unusual?** Choose one of the [14 operational families and the correlation pattern](https://1200km.com/anomaly-detection-atlas/families/).
@@ -38,9 +46,12 @@ Use the research to decide what a deviation means, the catalogs to select a meas
 - [Detection patterns and maintained KQL examples](https://1200km.com/anomaly-detection-atlas/research/queries/)
 - [Validation, baselines, and operational decisions](https://1200km.com/anomaly-detection-atlas/research/validation/)
 - [Sources, provenance, and further research](https://1200km.com/anomaly-detection-atlas/research/references/)
+- [Password spraying: correlate attempted identities, then success](https://1200km.com/anomaly-detection-atlas/research/worked-password-spray/)
+- [SaaS downloads: distinguish a spike from missing collection](https://1200km.com/anomaly-detection-atlas/research/worked-saas-downloads/)
+- [Kerberoasting: retain the real zero-match result](https://1200km.com/anomaly-detection-atlas/research/worked-kerberoasting/)
 
 ## Evidence and publication history
 
 The 55 active figures retain their original captions, source links, text equivalents, evidence labels, and full-size assets. [Browse every figure in context](https://1200km.com/anomaly-detection-atlas/visuals/). Superseded original illustrations remain only in the [historical publication appendix](https://1200km.com/articles/read/2026/2026-04-20-malicious-activity-as-a-statistical-signal-a-detection-engineering-analysis-of-anomaly-bas-90df8b6dea12/#98-historical-illustrations-and-corrected-navigation), not as current guidance.
 
-The full-length article remains a publication snapshot for citations and old anchors. The Atlas is the integrated navigation and engineering reference. [Read import provenance and the bounded consolidation audit](https://1200km.com/anomaly-detection-atlas/research/provenance/). This consolidation does not claim new incident fact-checking or new detector execution.
+**Maintained version:** the Atlas is the current reference. The [full-length article](https://1200km.com/articles/read/2026/2026-04-20-malicious-activity-as-a-statistical-signal-a-detection-engineering-analysis-of-anomaly-bas-90df8b6dea12/) remains a publication snapshot for citations and old anchors. The Atlas is the integrated navigation and engineering reference. [Read import provenance and the bounded consolidation audit](https://1200km.com/anomaly-detection-atlas/research/provenance/). This consolidation does not claim new incident fact-checking or new detector execution.

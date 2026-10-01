@@ -9,3 +9,5 @@ All 55 active figures must occur once in the research path. Large visual files r
 Validation: `npm run build`, `MAIN_SITE_ROOT=/path/to/site npm run check:research`, and `MAIN_SITE_ROOT=/path/to/site node scripts/check-browser.mjs`. The source repository is published through the existing `gh-pages` branch only after these gates pass. Preserve old hashed assets during deployment to keep open browser sessions functional.
 
 The main-site `data/anomaly-atlas.json` is a copied integration manifest. Update it whenever the Atlas integration manifest changes, regenerate main-site TTP pages/tags/discovery, and pass the full main-site release gate. Deploy Atlas first, then rebuild main-site search; the main-site pipeline requires all current research routes to be indexed.
+
+`worked-paths.json` is maintained editorial navigation to the pinned original query contracts and reported fixtures. It does not alter imported evidence or claim new execution. Edit it and the generator, regenerate, then check consistency against the preserved source report.
